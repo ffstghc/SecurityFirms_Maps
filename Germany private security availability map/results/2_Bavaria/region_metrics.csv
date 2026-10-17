@@ -1,0 +1,8 @@
+region_id,region,workers,residents,visits,football,icehockey,volksfest,xmas,fair,festival,per100k_visits,index,per100k_residents,resid_index,segment
+Mittelfranken,Mittelfranken,12966,1795909,9603279.0,816918.0,161361.0,6500000.0,2000000.0,0.0,125000.0,135.0,55.0,722.0,128.0,Thin per event visit
+Oberbayern,Oberbayern,31244,4764548,15238932.0,1656197.0,376735.0,8900000.0,3200000.0,1106000.0,0.0,205.0,84.0,655.8,117.0,Thin per event visit
+Niederbayern,Niederbayern,4718,1259204,1438842.0,0.0,138842.0,1300000.0,0.0,0.0,0.0,327.9,134.0,374.7,67.0,Thin per resident
+Schwaben,Schwaben,8657,1933313,1663747.0,506379.0,157368.0,1000000.0,0.0,0.0,0.0,520.3,213.0,447.8,80.0,Thin per resident
+Oberpfalz,Oberpfalz,6502,1121379,1169005.0,169005.0,0.0,1000000.0,0.0,0.0,0.0,556.2,228.0,579.8,103.0,Above average
+Unterfranken,Unterfranken,6191,1318817,1079439.0,79439.0,0.0,1000000.0,0.0,0.0,0.0,573.5,235.0,469.4,84.0,Thin per resident
+Oberfranken,Oberfranken,4198,1055758,320000.0,0.0,0.0,320000.0,0.0,0.0,0.0,1311.9,537.0,397.6,71.0,Thin per resident

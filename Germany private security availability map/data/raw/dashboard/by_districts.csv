@@ -1,0 +1,97 @@
+ags,district,type,region,workers_svb,workers_gb,population
+09161,Ingolstadt,Kreisfreie Stadt,Oberbayern,814,468,141185
+09162,"München, Landeshauptstadt",Kreisfreie Stadt,Oberbayern,8780,2659,1505005
+09163,Rosenheim (Stadt),Kreisfreie Stadt,Oberbayern,208,127,65274
+09171,Altötting,Landkreis,Oberbayern,712,123,113938
+09172,Berchtesgadener Land,Landkreis,Oberbayern,222,126,105292
+09173,Bad Tölz-Wolfratshausen,Landkreis,Oberbayern,253,178,130248
+09174,Dachau,Landkreis,Oberbayern,432,346,153595
+09175,Ebersberg,Landkreis,Oberbayern,269,130,144225
+09176,Eichstätt,Landkreis,Oberbayern,195,85,135668
+09177,Erding,Landkreis,Oberbayern,1414,161,140127
+09178,Freising,Landkreis,Oberbayern,2077,200,184564
+09179,Fürstenfeldbruck,Landkreis,Oberbayern,531,330,218227
+09180,Garmisch-Partenkirchen,Landkreis,Oberbayern,178,93,89296
+09181,Landsberg am Lech,Landkreis,Oberbayern,263,117,122107
+09182,Miesbach,Landkreis,Oberbayern,129,95,97152
+09183,Mühldorf a.Inn,Landkreis,Oberbayern,680,173,122037
+09184,München (Lkr.),Landkreis,Oberbayern,3814,1943,354396
+09185,Neuburg-Schrobenhausen,Landkreis,Oberbayern,140,143,99364
+09186,Pfaffenhofen a.d.Ilm,Landkreis,Oberbayern,427,133,130781
+09187,Rosenheim (Lkr.),Landkreis,Oberbayern,359,389,258637
+09188,Starnberg,Landkreis,Oberbayern,267,156,139329
+09189,Traunstein,Landkreis,Oberbayern,301,155,175144
+09190,Weilheim-Schongau,Landkreis,Oberbayern,333,116,138957
+09261,Landshut (Stadt),Kreisfreie Stadt,Niederbayern,386,141,71863
+09262,Passau (Stadt),Kreisfreie Stadt,Niederbayern,249,101,53039
+09263,Straubing,Kreisfreie Stadt,Niederbayern,328,272,49002
+09271,Deggendorf,Landkreis,Niederbayern,222,148,121844
+09272,Freyung-Grafenau,Landkreis,Niederbayern,163,89,78710
+09273,Kelheim,Landkreis,Niederbayern,240,130,126037
+09274,Landshut (Lkr.),Landkreis,Niederbayern,668,166,162170
+09275,Passau (Lkr.),Landkreis,Niederbayern,265,143,194699
+09276,Regen,Landkreis,Niederbayern,92,51,77267
+09277,Rottal-Inn,Landkreis,Niederbayern,149,154,120497
+09278,Straubing-Bogen,Landkreis,Niederbayern,116,74,103041
+09279,Dingolfing-Landau,Landkreis,Niederbayern,276,95,101035
+09361,Amberg,Kreisfreie Stadt,Oberpfalz,259,121,42553
+09362,Regensburg (Stadt),Kreisfreie Stadt,Oberpfalz,1185,499,151389
+09363,Weiden i.d.OPf.,Kreisfreie Stadt,Oberpfalz,158,69,42444
+09371,Amberg-Sulzbach,Landkreis,Oberpfalz,230,79,103982
+09372,Cham,Landkreis,Oberpfalz,802,196,128534
+09373,Neumarkt i.d.OPf.,Landkreis,Oberpfalz,342,168,138693
+09374,Neustadt a.d.Waldnaab,Landkreis,Oberpfalz,229,124,96049
+09375,Regensburg (Lkr.),Landkreis,Oberpfalz,785,306,196213
+09376,Schwandorf,Landkreis,Oberpfalz,295,469,149312
+09377,Tirschenreuth,Landkreis,Oberpfalz,118,68,72210
+09461,Bamberg (Stadt),Kreisfreie Stadt,Oberfranken,507,224,77150
+09462,Bayreuth (Stadt),Kreisfreie Stadt,Oberfranken,300,119,72940
+09463,Coburg (Stadt),Kreisfreie Stadt,Oberfranken,135,33,41064
+09464,Hof (Stadt),Kreisfreie Stadt,Oberfranken,194,77,46778
+09471,Bamberg (Lkr.),Landkreis,Oberfranken,130,91,147777
+09472,Bayreuth (Lkr.),Landkreis,Oberfranken,381,377,103215
+09473,Coburg (Lkr.),Landkreis,Oberfranken,67,79,84468
+09474,Forchheim,Landkreis,Oberfranken,178,106,116184
+09475,Hof (Lkr.),Landkreis,Oberfranken,115,80,92191
+09476,Kronach,Landkreis,Oberfranken,169,151,64545
+09477,Kulmbach,Landkreis,Oberfranken,79,35,71518
+09478,Lichtenfels,Landkreis,Oberfranken,232,96,67379
+09479,Wunsiedel i.Fichtelgebirge,Landkreis,Oberfranken,134,109,70549
+09561,Ansbach (Stadt),Kreisfreie Stadt,Mittelfranken,300,51,40742
+09562,Erlangen,Kreisfreie Stadt,Mittelfranken,765,211,115928
+09563,Fürth (Stadt),Kreisfreie Stadt,Mittelfranken,621,281,132036
+09564,Nürnberg,Kreisfreie Stadt,Mittelfranken,5183,1998,529508
+09565,Schwabach,Kreisfreie Stadt,Mittelfranken,112,548,40835
+09571,Ansbach (Lkr.),Landkreis,Mittelfranken,340,292,187633
+09572,Erlangen-Höchstadt,Landkreis,Mittelfranken,164,85,138325
+09573,Fürth (Lkr.),Landkreis,Mittelfranken,292,142,117719
+09574,Nürnberger Land,Landkreis,Mittelfranken,260,169,168813
+09575,Neustadt a.d.Aisch-Bad Windsheim,Landkreis,Mittelfranken,289,153,101043
+09576,Roth,Landkreis,Mittelfranken,200,94,128632
+09577,Weißenburg-Gunzenhausen,Landkreis,Mittelfranken,203,213,94695
+09661,Aschaffenburg (Stadt),Kreisfreie Stadt,Unterfranken,809,205,73091
+09662,Schweinfurt (Stadt),Kreisfreie Stadt,Unterfranken,453,138,54481
+09663,Würzburg (Stadt),Kreisfreie Stadt,Unterfranken,944,470,133258
+09671,Aschaffenburg (Lkr.),Landkreis,Unterfranken,525,203,170945
+09672,Bad Kissingen,Landkreis,Unterfranken,276,133,103489
+09673,Rhön-Grabfeld,Landkreis,Unterfranken,181,79,79375
+09674,Haßberge,Landkreis,Unterfranken,90,32,83869
+09675,Kitzingen,Landkreis,Unterfranken,139,192,91287
+09676,Miltenberg,Landkreis,Unterfranken,241,274,127547
+09677,Main-Spessart,Landkreis,Unterfranken,209,149,125282
+09678,Schweinfurt (Lkr.),Landkreis,Unterfranken,168,125,113977
+09679,Würzburg (Lkr.),Landkreis,Unterfranken,102,54,162216
+09761,Augsburg (Stadt),Kreisfreie Stadt,Schwaben,1527,900,301105
+09762,Kaufbeuren,Kreisfreie Stadt,Schwaben,97,38,46193
+09763,Kempten (Allgäu),Kreisfreie Stadt,Schwaben,252,136,67645
+09764,Memmingen,Kreisfreie Stadt,Schwaben,166,102,44192
+09771,Aichach-Friedberg,Landkreis,Schwaben,245,282,136803
+09772,Augsburg (Lkr.),Landkreis,Schwaben,445,211,262811
+09773,Dillingen a.d.Donau,Landkreis,Schwaben,225,52,98899
+09774,Günzburg,Landkreis,Schwaben,341,147,129846
+09775,Neu-Ulm,Landkreis,Schwaben,868,562,183595
+09776,Lindau (Bodensee),Landkreis,Schwaben,157,116,82411
+09777,Ostallgäu,Landkreis,Schwaben,175,138,142047
+09778,Unterallgäu,Landkreis,Schwaben,354,167,147255
+09779,Donau-Ries,Landkreis,Schwaben,277,184,135098
+09780,Oberallgäu,Landkreis,Schwaben,311,182,155413

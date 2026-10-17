@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "title": "Security Supply vs Event Demand"
+  },
+  "params": {
+    "bubbles": true,
+    "by_bubbles": true,
+    "by_combo": "fhvxml",
+    "by_level": "district",
+    "by_metric": "ratio",
+    "combo": "fvsml",
+    "metric": "ratio"
+  },
+  "datasets": {
+    "by_districts": {
+      "description": "Per district (Kreis): people in security occupations (KldB 2010 main group 53) at their place of work, insured employees (workers_svb) and minijobs (workers_gb), 31 March 2026, from the Federal Employment Agency's 'Regionalreport über Beschäftigte' for each district; residents on 31 December 2024 from Destatis, Gemeindeverzeichnis (Kreisfreie Städte und Landkreise).",
+      "fixed": true,
+      "source": {
+        "kind": "file",
+        "name": "by_districts.csv",
+        "url": "/_blob/a83e16acf5295b8fb98f17c0a26d4b7f"
+      },
+      "title": "Bavarian districts: workers",
+      "updated": {
+        "at": "2026-10-17T18:40:00Z",
+        "by": "Claude"
+      }
+    },
+    "by_events": {
+      "description": "33 Bavarian events with published visitor figures: football leagues 1–3 (diefalsche9.de, 2025/26), ice-hockey DEL main round 2025/26 (penny-del.org), Volksfeste (DSB Wirtschaftsstudie 2023; BAYERN TOURISMUS; festivalsindeutschland.de), Christmas markets Munich (city of Munich, 2025 estimate) and Nuremberg (2025), trade fairs bauma and IAA Mobility 2025 (GamesWirtschaft), Rock im Park and Summer Breeze.",
+      "fixed": true,
+      "source": {
+        "kind": "file",
+        "name": "by_events.csv",
+        "url": "/_blob/827befa457368fbe167f89b9f1264aab"
+      },
+      "title": "Bavarian crowd events",
+      "updated": {
+        "at": "2026-10-17T18:40:00Z",
+        "by": "Claude"
+      }
+    },
+    "by_shapes": {
+      "description": "Simplified outlines of the 96 Bavarian districts and 7 Regierungsbezirke, deutschlandGeoJSON (isellsoap, GitHub), based on DIVA-GIS data (pre-2021 boundary vintage; Bavarian districts unchanged).",
+      "fixed": true,
+      "source": {
+        "kind": "file",
+        "name": "by_shapes.json",
+        "url": "/_blob/ffc856147f8bf963d8f0ac5565d98c36"
+      },
+      "title": "Bavarian boundaries",
+      "updated": {
+        "at": "2026-10-17T18:40:00Z",
+        "by": "Claude"
+      }
+    },
+    "events": {
+      "description": "118 recurring crowd events with published visitor figures, compiled from public sources named in the 'source' column: football leagues 1–3 season 2025/26 (diefalsche9.de averages × home games), the 30 largest Volksfeste (Deutscher Schaustellerbund Wirtschaftsstudie 2023, Tab. 5), city festivals reported above 1 million visits, the largest trade fairs of 2025 (GamesWirtschaft) and the ten largest music festivals (top-10-liste.de). Coordinates are the venue location, checked to lie inside the stated state.",
+      "fixed": true,
+      "source": {
+        "kind": "file",
+        "name": "events.csv",
+        "url": "/_blob/595072507a74f12366ca317e954a6ee8"
+      },
+      "title": "Large crowd events",
+      "updated": {
+        "at": "2026-10-17T17:58:00Z",
+        "by": "Claude"
+      }
+    },
+    "population": {
+      "description": "Population on 31 December 2025 by federal state, from Destatis table 'Bevölkerung nach Nationalität und Bundesländern' (census-based, Zensus 2022).",
+      "fixed": true,
+      "source": {
+        "kind": "file",
+        "name": "population.csv",
+        "url": "/_blob/df6bbba461d4b0e9c549a1bac3532f4e"
+      },
+      "title": "Residents by state",
+      "updated": {
+        "at": "2026-10-17T17:58:00Z",
+        "by": "Claude"
+      }
+    },
+    "security_staff": {
+      "description": "Workers in WZ 2008 class 80.1 'Private Wach- und Sicherheitsdienste' by place of work, 31 March 2026: svb_801 = employees subject to social insurance, gb_801 = marginally employed (minijobs). From Statistik der Bundesagentur für Arbeit, 'Beschäftigte nach Wirtschaftszweigen (WZ 2008) – Länder (Quartalszahlen)', tables SVB I and GB I.",
+      "fixed": true,
+      "source": {
+        "kind": "file",
+        "name": "security_staff.csv",
+        "url": "/_blob/03e6bf4906c2220c86376f2fe5791583"
+      },
+      "title": "Security workers by state",
+      "updated": {
+        "at": "2026-10-17T17:58:00Z",
+        "by": "Claude"
+      }
+    },
+    "state_shapes": {
+      "description": "Simplified outlines of the 16 federal states (deutschlandGeoJSON by isellsoap on GitHub, 'niedrig' quality, based on DIVA-GIS data), coordinates rounded to 3 decimals. Used only to draw the map.",
+      "fixed": true,
+      "source": {
+        "kind": "file",
+        "name": "state_shapes.json",
+        "url": "/_blob/eaac511fddd9a0f660b21c9236774010"
+      },
+      "title": "State boundaries",
+      "updated": {
+        "at": "2026-10-17T17:50:00Z",
+        "by": "Claude"
+      }
+    }
+  }
+}

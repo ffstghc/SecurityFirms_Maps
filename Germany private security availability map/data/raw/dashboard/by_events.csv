@@ -1,0 +1,34 @@
+event,city,ags,category,lat,lon,visits,basis,source
+FC Bayern München,München,09162,football,48.2188,11.6247,1275000,"Bundesliga · Ø 75,000 × 17 home games",diefalsche9.de Zuschauertabellen 2025/26 (Stand 18.05.2026)
+1. FC Nürnberg,Nürnberg,09564,football,49.4263,11.1259,600848,"2. Bundesliga · Ø 35,344 × 17",diefalsche9.de Zuschauertabellen 2025/26 (Stand 18.05.2026)
+FC Augsburg,Augsburg,09761,football,48.3232,10.8863,506379,"Bundesliga · Ø 29,787 × 17",diefalsche9.de Zuschauertabellen 2025/26 (Stand 18.05.2026)
+TSV 1860 München,München,09162,football,48.111,11.574,285000,"3. Liga · Ø 15,000 × 19",diefalsche9.de Zuschauertabellen 2025/26 (Stand 18.05.2026)
+SpVgg Greuther Fürth,Fürth,09563,football,49.487,10.999,216070,"2. Bundesliga · Ø 12,710 × 17",diefalsche9.de Zuschauertabellen 2025/26 (Stand 18.05.2026)
+Jahn Regensburg,Regensburg,09362,football,48.99,12.108,169005,"3. Liga · Ø 8,895 × 19",diefalsche9.de Zuschauertabellen 2025/26 (Stand 18.05.2026)
+FC Ingolstadt 04,Ingolstadt,09161,football,48.745,11.486,96197,"3. Liga · Ø 5,063 × 19",diefalsche9.de Zuschauertabellen 2025/26 (Stand 18.05.2026)
+1. FC Schweinfurt 05,Schweinfurt,09662,football,50.039,10.212,79439,"3. Liga · Ø 4,181 × 19",diefalsche9.de Zuschauertabellen 2025/26 (Stand 18.05.2026)
+EHC Red Bull München,München,09162,icehockey,48.176,11.545,268545,"DEL main round 2025/26, 26 home games",PENNY DEL Zuschauerstatistik 2025/26 Hauptrunde
+Nürnberg Ice Tigers,Nürnberg,09564,icehockey,49.4234,11.1238,161361,"DEL main round 2025/26, 26 home games",PENNY DEL Zuschauerstatistik 2025/26 Hauptrunde
+Augsburger Panther,Augsburg,09761,icehockey,48.3578,10.904,157368,"DEL main round 2025/26, 26 home games",PENNY DEL Zuschauerstatistik 2025/26 Hauptrunde
+Straubing Tigers,Straubing,09263,icehockey,48.883,12.576,138842,"DEL main round 2025/26, 26 home games",PENNY DEL Zuschauerstatistik 2025/26 Hauptrunde
+ERC Ingolstadt,Ingolstadt,09161,icehockey,48.753,11.447,108190,"DEL main round 2025/26, 26 home games",PENNY DEL Zuschauerstatistik 2025/26 Hauptrunde
+Oktoberfest,München,09162,volksfest,48.1316,11.5497,7200000,Visits 2023 (DSB),"Deutscher Schaustellerbund, Wirtschaftsstudie 2023, Tab. 5"
+Frühlingsfest,Nürnberg,09564,volksfest,49.429,11.118,2000000,"Visits 2023 (DSB), approx.","Deutscher Schaustellerbund, Wirtschaftsstudie 2023, Tab. 5"
+Herbstvolksfest,Nürnberg,09564,volksfest,49.429,11.118,2000000,"Visits 2023 (DSB), approx.","Deutscher Schaustellerbund, Wirtschaftsstudie 2023, Tab. 5"
+Michaeliskirchweih,Fürth,09563,volksfest,49.477,10.989,1500000,Visits 2023 (DSB),"Deutscher Schaustellerbund, Wirtschaftsstudie 2023, Tab. 5"
+Gäubodenvolksfest,Straubing,09263,volksfest,48.884,12.572,1300000,Visits 2023 (DSB),"Deutscher Schaustellerbund, Wirtschaftsstudie 2023, Tab. 5"
+Bergkirchweih,Erlangen,09562,volksfest,49.604,11.006,1000000,"Visits 2023 (DSB), approx.","Deutscher Schaustellerbund, Wirtschaftsstudie 2023, Tab. 5"
+Herbstfest,Rosenheim,09163,volksfest,47.857,12.122,1000000,Visits 2023 (DSB),"Deutscher Schaustellerbund, Wirtschaftsstudie 2023, Tab. 5"
+Augsburger Plärrer,Augsburg,09761,volksfest,48.379,10.889,1000000,more than 1 million per year,"BAYERN TOURISMUS (bavaria.travel), Volksfeste in Bayern (Näherungswert, ohne Jahr)"
+Kiliani-Volksfest,Würzburg,09663,volksfest,49.796,9.919,1000000,up to 1 million per year,"BAYERN TOURISMUS (bavaria.travel), Volksfeste in Bayern (Näherungswert, ohne Jahr)"
+Regensburger Dult,Regensburg,09362,volksfest,49.027,12.089,1000000,up to 1 million per year,"BAYERN TOURISMUS (bavaria.travel), Volksfeste in Bayern (Näherungswert, ohne Jahr)"
+Herbstfest,Erding,09177,volksfest,48.305,11.91,400000,"about 400,000 per year","BAYERN TOURISMUS (bavaria.travel), Volksfeste in Bayern (Näherungswert, ohne Jahr)"
+Dachauer Volksfest,Dachau,09174,volksfest,48.26,11.44,300000,"over 300,000 per year","BAYERN TOURISMUS (bavaria.travel), Volksfeste in Bayern (Näherungswert, ohne Jahr)"
+Sandkerwa,Bamberg,09461,volksfest,49.892,10.884,200000,"about 200,000 visitors 2025","festivalsindeutschland.de, Bamberger Sandkerwa 2025"
+Kulmbacher Bierwoche,Kulmbach,09477,volksfest,50.103,11.456,120000,"about 120,000 visitors 2025","festivalsindeutschland.de, Kulmbacher Bierwoche 2025"
+Christkindlmarkt (Marienplatz),München,09162,xmas,48.1374,11.5755,3200000,about 3.2 million visits 2025 (city estimate),"Landeshauptstadt München, Rathaus Umschau 23.12.2025"
+Christkindlesmarkt,Nürnberg,09564,xmas,49.454,11.077,2000000,about 2 million visitors 2025,"epd/Sonntagsblatt, Bilanz Christkindlesmarkt 2025"
+bauma,München,09162,fair,48.136,11.696,606000,Visitors 2025,"GamesWirtschaft, Die größten Messen in Deutschland 2025"
+IAA Mobility,München,09162,fair,48.136,11.696,500000,Visitors 2025 (free entry areas included),"GamesWirtschaft, Die größten Messen in Deutschland 2025"
+Rock im Park,Nürnberg,09564,festival,49.431,11.123,80000,"about 80,000 per festival day","top-10-liste.de, größte Musikfestivals"
+Summer Breeze,Dinkelsbühl,09571,festival,49.056,10.33,45000,"about 45,000 visitors 2025","festivalsindeutschland.de, Summer Breeze 2025"

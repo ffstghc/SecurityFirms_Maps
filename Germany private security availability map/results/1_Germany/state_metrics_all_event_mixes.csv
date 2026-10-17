@@ -1,0 +1,497 @@
+combo,level,code,state,region,workers,residents,football,volksfest,stadtfest,fair,festival,visits,per100k_visits,index,per100k_residents,resid_index,segment
+f,state,BW,Baden-Württemberg,Baden-Württemberg,29209,11238761,3294413.0,5700000.0,0.0,510000.0,309000.0,3294413.0,886.6,83.0,259.9,79.0,Thin on both
+f,state,BY,Bayern,Bayern,39266,13245503,3227938.0,16000000.0,0.0,1106000.0,80000.0,3227938.0,1216.4,115.0,296.4,91.0,Thin per resident
+f,state,BE,Berlin,Berlin,22822,3700577,1194879.0,0.0,1100000.0,630000.0,60000.0,1194879.0,1910.0,180.0,616.7,189.0,Above average
+f,state,BB,Brandenburg,Brandenburg,7839,2551889,244302.0,0.0,0.0,0.0,0.0,244302.0,3208.7,302.0,307.2,94.0,Thin per resident
+f,state,HB,Bremen,Bremen,4004,706915,701199.0,2000000.0,0.0,0.0,0.0,701199.0,571.0,54.0,566.4,173.0,Thin per event visit
+f,state,HH,Hamburg,Hamburg,11953,1869473,1469327.0,5500000.0,0.0,0.0,0.0,1469327.0,813.5,77.0,639.4,196.0,Thin per event visit
+f,state,HE,Hessen,Hessen,30285,6278594,1388938.0,0.0,1000000.0,238000.0,0.0,1388938.0,2180.4,205.0,482.4,148.0,Above average
+f,state,MV,Mecklenburg-Vorpommern,Mecklenburg-Vorpommern,5225,1573685,474772.0,500000.0,0.0,0.0,75000.0,474772.0,1100.5,104.0,332.0,102.0,Above average
+f,state,NI,Niedersachsen,Niedersachsen,20990,8000826,1823143.0,2850000.0,2300000.0,603000.0,125000.0,1823143.0,1151.3,108.0,262.3,80.0,Thin per resident
+f,state,NW,Nordrhein-Westfalen,Nordrhein-Westfalen,53085,17986214,8033030.0,15400000.0,0.0,1491000.0,225000.0,8033030.0,660.8,62.0,295.1,90.0,Thin on both
+f,state,RP,Rheinland-Pfalz,Rheinland-Pfalz,6979,4123022,1334738.0,0.0,0.0,0.0,90000.0,1334738.0,522.9,49.0,169.3,52.0,Thin on both
+f,state,SL,Saarland,Saarland,2592,1007342,401199.0,0.0,0.0,0.0,0.0,401199.0,646.1,61.0,257.3,79.0,Thin on both
+f,state,SN,Sachsen,Sachsen,17030,4026599,1438553.0,0.0,0.0,296000.0,0.0,1438553.0,1183.8,111.0,422.9,129.0,Above average
+f,state,ST,Sachsen-Anhalt,Sachsen-Anhalt,6222,2120252,426428.0,500000.0,0.0,0.0,0.0,426428.0,1459.1,137.0,293.5,90.0,Thin per resident
+f,state,SH,Schleswig-Holstein,Schleswig-Holstein,10636,2958519,241145.0,0.0,3500000.0,0.0,85000.0,241145.0,4410.6,415.0,359.5,110.0,Above average
+f,state,TH,Thüringen,Thüringen,4782,2078946,0.0,500000.0,0.0,0.0,0.0,0.0,,,230.0,70.0,No events counted
+v,state,BW,Baden-Württemberg,Baden-Württemberg,29209,11238761,3294413.0,5700000.0,0.0,510000.0,309000.0,5700000.0,512.4,92.0,259.9,79.0,Thin on both
+v,state,BY,Bayern,Bayern,39266,13245503,3227938.0,16000000.0,0.0,1106000.0,80000.0,16000000.0,245.4,44.0,296.4,91.0,Thin on both
+v,state,BE,Berlin,Berlin,22822,3700577,1194879.0,0.0,1100000.0,630000.0,60000.0,0.0,,,616.7,189.0,No events counted
+v,state,BB,Brandenburg,Brandenburg,7839,2551889,244302.0,0.0,0.0,0.0,0.0,0.0,,,307.2,94.0,No events counted
+v,state,HB,Bremen,Bremen,4004,706915,701199.0,2000000.0,0.0,0.0,0.0,2000000.0,200.2,36.0,566.4,173.0,Thin per event visit
+v,state,HH,Hamburg,Hamburg,11953,1869473,1469327.0,5500000.0,0.0,0.0,0.0,5500000.0,217.3,39.0,639.4,196.0,Thin per event visit
+v,state,HE,Hessen,Hessen,30285,6278594,1388938.0,0.0,1000000.0,238000.0,0.0,0.0,,,482.4,148.0,No events counted
+v,state,MV,Mecklenburg-Vorpommern,Mecklenburg-Vorpommern,5225,1573685,474772.0,500000.0,0.0,0.0,75000.0,500000.0,1045.0,187.0,332.0,102.0,Above average
+v,state,NI,Niedersachsen,Niedersachsen,20990,8000826,1823143.0,2850000.0,2300000.0,603000.0,125000.0,2850000.0,736.5,132.0,262.3,80.0,Thin per resident
+v,state,NW,Nordrhein-Westfalen,Nordrhein-Westfalen,53085,17986214,8033030.0,15400000.0,0.0,1491000.0,225000.0,15400000.0,344.7,62.0,295.1,90.0,Thin on both
+v,state,RP,Rheinland-Pfalz,Rheinland-Pfalz,6979,4123022,1334738.0,0.0,0.0,0.0,90000.0,0.0,,,169.3,52.0,No events counted
+v,state,SL,Saarland,Saarland,2592,1007342,401199.0,0.0,0.0,0.0,0.0,0.0,,,257.3,79.0,No events counted
+v,state,SN,Sachsen,Sachsen,17030,4026599,1438553.0,0.0,0.0,296000.0,0.0,0.0,,,422.9,129.0,No events counted
+v,state,ST,Sachsen-Anhalt,Sachsen-Anhalt,6222,2120252,426428.0,500000.0,0.0,0.0,0.0,500000.0,1244.4,223.0,293.5,90.0,Thin per resident
+v,state,SH,Schleswig-Holstein,Schleswig-Holstein,10636,2958519,241145.0,0.0,3500000.0,0.0,85000.0,0.0,,,359.5,110.0,No events counted
+v,state,TH,Thüringen,Thüringen,4782,2078946,0.0,500000.0,0.0,0.0,0.0,500000.0,956.4,172.0,230.0,70.0,Thin per resident
+s,state,BW,Baden-Württemberg,Baden-Württemberg,29209,11238761,3294413.0,5700000.0,0.0,510000.0,309000.0,0.0,,,259.9,79.0,No events counted
+s,state,BY,Bayern,Bayern,39266,13245503,3227938.0,16000000.0,0.0,1106000.0,80000.0,0.0,,,296.4,91.0,No events counted
+s,state,BE,Berlin,Berlin,22822,3700577,1194879.0,0.0,1100000.0,630000.0,60000.0,1100000.0,2074.7,60.0,616.7,189.0,Thin per event visit
+s,state,BB,Brandenburg,Brandenburg,7839,2551889,244302.0,0.0,0.0,0.0,0.0,0.0,,,307.2,94.0,No events counted
+s,state,HB,Bremen,Bremen,4004,706915,701199.0,2000000.0,0.0,0.0,0.0,0.0,,,566.4,173.0,No events counted
+s,state,HH,Hamburg,Hamburg,11953,1869473,1469327.0,5500000.0,0.0,0.0,0.0,0.0,,,639.4,196.0,No events counted
+s,state,HE,Hessen,Hessen,30285,6278594,1388938.0,0.0,1000000.0,238000.0,0.0,1000000.0,3028.5,88.0,482.4,148.0,Thin per event visit
+s,state,MV,Mecklenburg-Vorpommern,Mecklenburg-Vorpommern,5225,1573685,474772.0,500000.0,0.0,0.0,75000.0,0.0,,,332.0,102.0,No events counted
+s,state,NI,Niedersachsen,Niedersachsen,20990,8000826,1823143.0,2850000.0,2300000.0,603000.0,125000.0,2300000.0,912.6,26.0,262.3,80.0,Thin on both
+s,state,NW,Nordrhein-Westfalen,Nordrhein-Westfalen,53085,17986214,8033030.0,15400000.0,0.0,1491000.0,225000.0,0.0,,,295.1,90.0,No events counted
+s,state,RP,Rheinland-Pfalz,Rheinland-Pfalz,6979,4123022,1334738.0,0.0,0.0,0.0,90000.0,0.0,,,169.3,52.0,No events counted
+s,state,SL,Saarland,Saarland,2592,1007342,401199.0,0.0,0.0,0.0,0.0,0.0,,,257.3,79.0,No events counted
+s,state,SN,Sachsen,Sachsen,17030,4026599,1438553.0,0.0,0.0,296000.0,0.0,0.0,,,422.9,129.0,No events counted
+s,state,ST,Sachsen-Anhalt,Sachsen-Anhalt,6222,2120252,426428.0,500000.0,0.0,0.0,0.0,0.0,,,293.5,90.0,No events counted
+s,state,SH,Schleswig-Holstein,Schleswig-Holstein,10636,2958519,241145.0,0.0,3500000.0,0.0,85000.0,3500000.0,303.9,9.0,359.5,110.0,Thin per event visit
+s,state,TH,Thüringen,Thüringen,4782,2078946,0.0,500000.0,0.0,0.0,0.0,0.0,,,230.0,70.0,No events counted
+m,state,BW,Baden-Württemberg,Baden-Württemberg,29209,11238761,3294413.0,5700000.0,0.0,510000.0,309000.0,510000.0,5727.3,102.0,259.9,79.0,Thin per resident
+m,state,BY,Bayern,Bayern,39266,13245503,3227938.0,16000000.0,0.0,1106000.0,80000.0,1106000.0,3550.3,63.0,296.4,91.0,Thin on both
+m,state,BE,Berlin,Berlin,22822,3700577,1194879.0,0.0,1100000.0,630000.0,60000.0,630000.0,3622.5,65.0,616.7,189.0,Thin per event visit
+m,state,BB,Brandenburg,Brandenburg,7839,2551889,244302.0,0.0,0.0,0.0,0.0,0.0,,,307.2,94.0,No events counted
+m,state,HB,Bremen,Bremen,4004,706915,701199.0,2000000.0,0.0,0.0,0.0,0.0,,,566.4,173.0,No events counted
+m,state,HH,Hamburg,Hamburg,11953,1869473,1469327.0,5500000.0,0.0,0.0,0.0,0.0,,,639.4,196.0,No events counted
+m,state,HE,Hessen,Hessen,30285,6278594,1388938.0,0.0,1000000.0,238000.0,0.0,238000.0,12724.8,227.0,482.4,148.0,Above average
+m,state,MV,Mecklenburg-Vorpommern,Mecklenburg-Vorpommern,5225,1573685,474772.0,500000.0,0.0,0.0,75000.0,0.0,,,332.0,102.0,No events counted
+m,state,NI,Niedersachsen,Niedersachsen,20990,8000826,1823143.0,2850000.0,2300000.0,603000.0,125000.0,603000.0,3480.9,62.0,262.3,80.0,Thin on both
+m,state,NW,Nordrhein-Westfalen,Nordrhein-Westfalen,53085,17986214,8033030.0,15400000.0,0.0,1491000.0,225000.0,1491000.0,3560.4,64.0,295.1,90.0,Thin on both
+m,state,RP,Rheinland-Pfalz,Rheinland-Pfalz,6979,4123022,1334738.0,0.0,0.0,0.0,90000.0,0.0,,,169.3,52.0,No events counted
+m,state,SL,Saarland,Saarland,2592,1007342,401199.0,0.0,0.0,0.0,0.0,0.0,,,257.3,79.0,No events counted
+m,state,SN,Sachsen,Sachsen,17030,4026599,1438553.0,0.0,0.0,296000.0,0.0,296000.0,5753.4,103.0,422.9,129.0,Above average
+m,state,ST,Sachsen-Anhalt,Sachsen-Anhalt,6222,2120252,426428.0,500000.0,0.0,0.0,0.0,0.0,,,293.5,90.0,No events counted
+m,state,SH,Schleswig-Holstein,Schleswig-Holstein,10636,2958519,241145.0,0.0,3500000.0,0.0,85000.0,0.0,,,359.5,110.0,No events counted
+m,state,TH,Thüringen,Thüringen,4782,2078946,0.0,500000.0,0.0,0.0,0.0,0.0,,,230.0,70.0,No events counted
+l,state,BW,Baden-Württemberg,Baden-Württemberg,29209,11238761,3294413.0,5700000.0,0.0,510000.0,309000.0,309000.0,9452.8,36.0,259.9,79.0,Thin on both
+l,state,BY,Bayern,Bayern,39266,13245503,3227938.0,16000000.0,0.0,1106000.0,80000.0,80000.0,49082.5,189.0,296.4,91.0,Thin per resident
+l,state,BE,Berlin,Berlin,22822,3700577,1194879.0,0.0,1100000.0,630000.0,60000.0,60000.0,38036.7,146.0,616.7,189.0,Above average
+l,state,BB,Brandenburg,Brandenburg,7839,2551889,244302.0,0.0,0.0,0.0,0.0,0.0,,,307.2,94.0,No events counted
+l,state,HB,Bremen,Bremen,4004,706915,701199.0,2000000.0,0.0,0.0,0.0,0.0,,,566.4,173.0,No events counted
+l,state,HH,Hamburg,Hamburg,11953,1869473,1469327.0,5500000.0,0.0,0.0,0.0,0.0,,,639.4,196.0,No events counted
+l,state,HE,Hessen,Hessen,30285,6278594,1388938.0,0.0,1000000.0,238000.0,0.0,0.0,,,482.4,148.0,No events counted
+l,state,MV,Mecklenburg-Vorpommern,Mecklenburg-Vorpommern,5225,1573685,474772.0,500000.0,0.0,0.0,75000.0,75000.0,6966.7,27.0,332.0,102.0,Thin per event visit
+l,state,NI,Niedersachsen,Niedersachsen,20990,8000826,1823143.0,2850000.0,2300000.0,603000.0,125000.0,125000.0,16792.0,65.0,262.3,80.0,Thin on both
+l,state,NW,Nordrhein-Westfalen,Nordrhein-Westfalen,53085,17986214,8033030.0,15400000.0,0.0,1491000.0,225000.0,225000.0,23593.3,91.0,295.1,90.0,Thin on both
+l,state,RP,Rheinland-Pfalz,Rheinland-Pfalz,6979,4123022,1334738.0,0.0,0.0,0.0,90000.0,90000.0,7754.4,30.0,169.3,52.0,Thin on both
+l,state,SL,Saarland,Saarland,2592,1007342,401199.0,0.0,0.0,0.0,0.0,0.0,,,257.3,79.0,No events counted
+l,state,SN,Sachsen,Sachsen,17030,4026599,1438553.0,0.0,0.0,296000.0,0.0,0.0,,,422.9,129.0,No events counted
+l,state,ST,Sachsen-Anhalt,Sachsen-Anhalt,6222,2120252,426428.0,500000.0,0.0,0.0,0.0,0.0,,,293.5,90.0,No events counted
+l,state,SH,Schleswig-Holstein,Schleswig-Holstein,10636,2958519,241145.0,0.0,3500000.0,0.0,85000.0,85000.0,12512.9,48.0,359.5,110.0,Thin per event visit
+l,state,TH,Thüringen,Thüringen,4782,2078946,0.0,500000.0,0.0,0.0,0.0,0.0,,,230.0,70.0,No events counted
+fv,state,BW,Baden-Württemberg,Baden-Württemberg,29209,11238761,3294413.0,5700000.0,0.0,510000.0,309000.0,8994413.0,324.7,89.0,259.9,79.0,Thin on both
+fv,state,BY,Bayern,Bayern,39266,13245503,3227938.0,16000000.0,0.0,1106000.0,80000.0,19227938.0,204.2,56.0,296.4,91.0,Thin on both
+fv,state,BE,Berlin,Berlin,22822,3700577,1194879.0,0.0,1100000.0,630000.0,60000.0,1194879.0,1910.0,522.0,616.7,189.0,Above average
+fv,state,BB,Brandenburg,Brandenburg,7839,2551889,244302.0,0.0,0.0,0.0,0.0,244302.0,3208.7,878.0,307.2,94.0,Thin per resident
+fv,state,HB,Bremen,Bremen,4004,706915,701199.0,2000000.0,0.0,0.0,0.0,2701199.0,148.2,41.0,566.4,173.0,Thin per event visit
+fv,state,HH,Hamburg,Hamburg,11953,1869473,1469327.0,5500000.0,0.0,0.0,0.0,6969327.0,171.5,47.0,639.4,196.0,Thin per event visit
+fv,state,HE,Hessen,Hessen,30285,6278594,1388938.0,0.0,1000000.0,238000.0,0.0,1388938.0,2180.4,596.0,482.4,148.0,Above average
+fv,state,MV,Mecklenburg-Vorpommern,Mecklenburg-Vorpommern,5225,1573685,474772.0,500000.0,0.0,0.0,75000.0,974772.0,536.0,147.0,332.0,102.0,Above average
+fv,state,NI,Niedersachsen,Niedersachsen,20990,8000826,1823143.0,2850000.0,2300000.0,603000.0,125000.0,4673143.0,449.2,123.0,262.3,80.0,Thin per resident
+fv,state,NW,Nordrhein-Westfalen,Nordrhein-Westfalen,53085,17986214,8033030.0,15400000.0,0.0,1491000.0,225000.0,23433030.0,226.5,62.0,295.1,90.0,Thin on both
+fv,state,RP,Rheinland-Pfalz,Rheinland-Pfalz,6979,4123022,1334738.0,0.0,0.0,0.0,90000.0,1334738.0,522.9,143.0,169.3,52.0,Thin per resident
+fv,state,SL,Saarland,Saarland,2592,1007342,401199.0,0.0,0.0,0.0,0.0,401199.0,646.1,177.0,257.3,79.0,Thin per resident
+fv,state,SN,Sachsen,Sachsen,17030,4026599,1438553.0,0.0,0.0,296000.0,0.0,1438553.0,1183.8,324.0,422.9,129.0,Above average
+fv,state,ST,Sachsen-Anhalt,Sachsen-Anhalt,6222,2120252,426428.0,500000.0,0.0,0.0,0.0,926428.0,671.6,184.0,293.5,90.0,Thin per resident
+fv,state,SH,Schleswig-Holstein,Schleswig-Holstein,10636,2958519,241145.0,0.0,3500000.0,0.0,85000.0,241145.0,4410.6,1206.0,359.5,110.0,Above average
+fv,state,TH,Thüringen,Thüringen,4782,2078946,0.0,500000.0,0.0,0.0,0.0,500000.0,956.4,262.0,230.0,70.0,Thin per resident
+fs,state,BW,Baden-Württemberg,Baden-Württemberg,29209,11238761,3294413.0,5700000.0,0.0,510000.0,309000.0,3294413.0,886.6,109.0,259.9,79.0,Thin per resident
+fs,state,BY,Bayern,Bayern,39266,13245503,3227938.0,16000000.0,0.0,1106000.0,80000.0,3227938.0,1216.4,150.0,296.4,91.0,Thin per resident
+fs,state,BE,Berlin,Berlin,22822,3700577,1194879.0,0.0,1100000.0,630000.0,60000.0,2294879.0,994.5,122.0,616.7,189.0,Above average
+fs,state,BB,Brandenburg,Brandenburg,7839,2551889,244302.0,0.0,0.0,0.0,0.0,244302.0,3208.7,395.0,307.2,94.0,Thin per resident
+fs,state,HB,Bremen,Bremen,4004,706915,701199.0,2000000.0,0.0,0.0,0.0,701199.0,571.0,70.0,566.4,173.0,Thin per event visit
+fs,state,HH,Hamburg,Hamburg,11953,1869473,1469327.0,5500000.0,0.0,0.0,0.0,1469327.0,813.5,100.0,639.4,196.0,Above average
+fs,state,HE,Hessen,Hessen,30285,6278594,1388938.0,0.0,1000000.0,238000.0,0.0,2388938.0,1267.7,156.0,482.4,148.0,Above average
+fs,state,MV,Mecklenburg-Vorpommern,Mecklenburg-Vorpommern,5225,1573685,474772.0,500000.0,0.0,0.0,75000.0,474772.0,1100.5,135.0,332.0,102.0,Above average
+fs,state,NI,Niedersachsen,Niedersachsen,20990,8000826,1823143.0,2850000.0,2300000.0,603000.0,125000.0,4123143.0,509.1,63.0,262.3,80.0,Thin on both
+fs,state,NW,Nordrhein-Westfalen,Nordrhein-Westfalen,53085,17986214,8033030.0,15400000.0,0.0,1491000.0,225000.0,8033030.0,660.8,81.0,295.1,90.0,Thin on both
+fs,state,RP,Rheinland-Pfalz,Rheinland-Pfalz,6979,4123022,1334738.0,0.0,0.0,0.0,90000.0,1334738.0,522.9,64.0,169.3,52.0,Thin on both
+fs,state,SL,Saarland,Saarland,2592,1007342,401199.0,0.0,0.0,0.0,0.0,401199.0,646.1,80.0,257.3,79.0,Thin on both
+fs,state,SN,Sachsen,Sachsen,17030,4026599,1438553.0,0.0,0.0,296000.0,0.0,1438553.0,1183.8,146.0,422.9,129.0,Above average
+fs,state,ST,Sachsen-Anhalt,Sachsen-Anhalt,6222,2120252,426428.0,500000.0,0.0,0.0,0.0,426428.0,1459.1,180.0,293.5,90.0,Thin per resident
+fs,state,SH,Schleswig-Holstein,Schleswig-Holstein,10636,2958519,241145.0,0.0,3500000.0,0.0,85000.0,3741145.0,284.3,35.0,359.5,110.0,Thin per event visit
+fs,state,TH,Thüringen,Thüringen,4782,2078946,0.0,500000.0,0.0,0.0,0.0,0.0,,,230.0,70.0,No events counted
+fm,state,BW,Baden-Württemberg,Baden-Württemberg,29209,11238761,3294413.0,5700000.0,0.0,510000.0,309000.0,3804413.0,767.8,86.0,259.9,79.0,Thin on both
+fm,state,BY,Bayern,Bayern,39266,13245503,3227938.0,16000000.0,0.0,1106000.0,80000.0,4333938.0,906.0,101.0,296.4,91.0,Thin per resident
+fm,state,BE,Berlin,Berlin,22822,3700577,1194879.0,0.0,1100000.0,630000.0,60000.0,1824879.0,1250.6,140.0,616.7,189.0,Above average
+fm,state,BB,Brandenburg,Brandenburg,7839,2551889,244302.0,0.0,0.0,0.0,0.0,244302.0,3208.7,359.0,307.2,94.0,Thin per resident
+fm,state,HB,Bremen,Bremen,4004,706915,701199.0,2000000.0,0.0,0.0,0.0,701199.0,571.0,64.0,566.4,173.0,Thin per event visit
+fm,state,HH,Hamburg,Hamburg,11953,1869473,1469327.0,5500000.0,0.0,0.0,0.0,1469327.0,813.5,91.0,639.4,196.0,Thin per event visit
+fm,state,HE,Hessen,Hessen,30285,6278594,1388938.0,0.0,1000000.0,238000.0,0.0,1626938.0,1861.5,208.0,482.4,148.0,Above average
+fm,state,MV,Mecklenburg-Vorpommern,Mecklenburg-Vorpommern,5225,1573685,474772.0,500000.0,0.0,0.0,75000.0,474772.0,1100.5,123.0,332.0,102.0,Above average
+fm,state,NI,Niedersachsen,Niedersachsen,20990,8000826,1823143.0,2850000.0,2300000.0,603000.0,125000.0,2426143.0,865.2,97.0,262.3,80.0,Thin on both
+fm,state,NW,Nordrhein-Westfalen,Nordrhein-Westfalen,53085,17986214,8033030.0,15400000.0,0.0,1491000.0,225000.0,9524030.0,557.4,62.0,295.1,90.0,Thin on both
+fm,state,RP,Rheinland-Pfalz,Rheinland-Pfalz,6979,4123022,1334738.0,0.0,0.0,0.0,90000.0,1334738.0,522.9,59.0,169.3,52.0,Thin on both
+fm,state,SL,Saarland,Saarland,2592,1007342,401199.0,0.0,0.0,0.0,0.0,401199.0,646.1,72.0,257.3,79.0,Thin on both
+fm,state,SN,Sachsen,Sachsen,17030,4026599,1438553.0,0.0,0.0,296000.0,0.0,1734553.0,981.8,110.0,422.9,129.0,Above average
+fm,state,ST,Sachsen-Anhalt,Sachsen-Anhalt,6222,2120252,426428.0,500000.0,0.0,0.0,0.0,426428.0,1459.1,163.0,293.5,90.0,Thin per resident
+fm,state,SH,Schleswig-Holstein,Schleswig-Holstein,10636,2958519,241145.0,0.0,3500000.0,0.0,85000.0,241145.0,4410.6,494.0,359.5,110.0,Above average
+fm,state,TH,Thüringen,Thüringen,4782,2078946,0.0,500000.0,0.0,0.0,0.0,0.0,,,230.0,70.0,No events counted
+fl,state,BW,Baden-Württemberg,Baden-Württemberg,29209,11238761,3294413.0,5700000.0,0.0,510000.0,309000.0,3603413.0,810.6,79.0,259.9,79.0,Thin on both
+fl,state,BY,Bayern,Bayern,39266,13245503,3227938.0,16000000.0,0.0,1106000.0,80000.0,3307938.0,1187.0,116.0,296.4,91.0,Thin per resident
+fl,state,BE,Berlin,Berlin,22822,3700577,1194879.0,0.0,1100000.0,630000.0,60000.0,1254879.0,1818.7,178.0,616.7,189.0,Above average
+fl,state,BB,Brandenburg,Brandenburg,7839,2551889,244302.0,0.0,0.0,0.0,0.0,244302.0,3208.7,314.0,307.2,94.0,Thin per resident
+fl,state,HB,Bremen,Bremen,4004,706915,701199.0,2000000.0,0.0,0.0,0.0,701199.0,571.0,56.0,566.4,173.0,Thin per event visit
+fl,state,HH,Hamburg,Hamburg,11953,1869473,1469327.0,5500000.0,0.0,0.0,0.0,1469327.0,813.5,80.0,639.4,196.0,Thin per event visit
+fl,state,HE,Hessen,Hessen,30285,6278594,1388938.0,0.0,1000000.0,238000.0,0.0,1388938.0,2180.4,214.0,482.4,148.0,Above average
+fl,state,MV,Mecklenburg-Vorpommern,Mecklenburg-Vorpommern,5225,1573685,474772.0,500000.0,0.0,0.0,75000.0,549772.0,950.4,93.0,332.0,102.0,Thin per event visit
+fl,state,NI,Niedersachsen,Niedersachsen,20990,8000826,1823143.0,2850000.0,2300000.0,603000.0,125000.0,1948143.0,1077.4,106.0,262.3,80.0,Thin per resident
+fl,state,NW,Nordrhein-Westfalen,Nordrhein-Westfalen,53085,17986214,8033030.0,15400000.0,0.0,1491000.0,225000.0,8258030.0,642.8,63.0,295.1,90.0,Thin on both
+fl,state,RP,Rheinland-Pfalz,Rheinland-Pfalz,6979,4123022,1334738.0,0.0,0.0,0.0,90000.0,1424738.0,489.8,48.0,169.3,52.0,Thin on both
+fl,state,SL,Saarland,Saarland,2592,1007342,401199.0,0.0,0.0,0.0,0.0,401199.0,646.1,63.0,257.3,79.0,Thin on both
+fl,state,SN,Sachsen,Sachsen,17030,4026599,1438553.0,0.0,0.0,296000.0,0.0,1438553.0,1183.8,116.0,422.9,129.0,Above average
+fl,state,ST,Sachsen-Anhalt,Sachsen-Anhalt,6222,2120252,426428.0,500000.0,0.0,0.0,0.0,426428.0,1459.1,143.0,293.5,90.0,Thin per resident
+fl,state,SH,Schleswig-Holstein,Schleswig-Holstein,10636,2958519,241145.0,0.0,3500000.0,0.0,85000.0,326145.0,3261.1,320.0,359.5,110.0,Above average
+fl,state,TH,Thüringen,Thüringen,4782,2078946,0.0,500000.0,0.0,0.0,0.0,0.0,,,230.0,70.0,No events counted
+vs,state,BW,Baden-Württemberg,Baden-Württemberg,29209,11238761,3294413.0,5700000.0,0.0,510000.0,309000.0,5700000.0,512.4,107.0,259.9,79.0,Thin per resident
+vs,state,BY,Bayern,Bayern,39266,13245503,3227938.0,16000000.0,0.0,1106000.0,80000.0,16000000.0,245.4,51.0,296.4,91.0,Thin on both
+vs,state,BE,Berlin,Berlin,22822,3700577,1194879.0,0.0,1100000.0,630000.0,60000.0,1100000.0,2074.7,432.0,616.7,189.0,Above average
+vs,state,BB,Brandenburg,Brandenburg,7839,2551889,244302.0,0.0,0.0,0.0,0.0,0.0,,,307.2,94.0,No events counted
+vs,state,HB,Bremen,Bremen,4004,706915,701199.0,2000000.0,0.0,0.0,0.0,2000000.0,200.2,42.0,566.4,173.0,Thin per event visit
+vs,state,HH,Hamburg,Hamburg,11953,1869473,1469327.0,5500000.0,0.0,0.0,0.0,5500000.0,217.3,45.0,639.4,196.0,Thin per event visit
+vs,state,HE,Hessen,Hessen,30285,6278594,1388938.0,0.0,1000000.0,238000.0,0.0,1000000.0,3028.5,631.0,482.4,148.0,Above average
+vs,state,MV,Mecklenburg-Vorpommern,Mecklenburg-Vorpommern,5225,1573685,474772.0,500000.0,0.0,0.0,75000.0,500000.0,1045.0,218.0,332.0,102.0,Above average
+vs,state,NI,Niedersachsen,Niedersachsen,20990,8000826,1823143.0,2850000.0,2300000.0,603000.0,125000.0,5150000.0,407.6,85.0,262.3,80.0,Thin on both
+vs,state,NW,Nordrhein-Westfalen,Nordrhein-Westfalen,53085,17986214,8033030.0,15400000.0,0.0,1491000.0,225000.0,15400000.0,344.7,72.0,295.1,90.0,Thin on both
+vs,state,RP,Rheinland-Pfalz,Rheinland-Pfalz,6979,4123022,1334738.0,0.0,0.0,0.0,90000.0,0.0,,,169.3,52.0,No events counted
+vs,state,SL,Saarland,Saarland,2592,1007342,401199.0,0.0,0.0,0.0,0.0,0.0,,,257.3,79.0,No events counted
+vs,state,SN,Sachsen,Sachsen,17030,4026599,1438553.0,0.0,0.0,296000.0,0.0,0.0,,,422.9,129.0,No events counted
+vs,state,ST,Sachsen-Anhalt,Sachsen-Anhalt,6222,2120252,426428.0,500000.0,0.0,0.0,0.0,500000.0,1244.4,259.0,293.5,90.0,Thin per resident
+vs,state,SH,Schleswig-Holstein,Schleswig-Holstein,10636,2958519,241145.0,0.0,3500000.0,0.0,85000.0,3500000.0,303.9,63.0,359.5,110.0,Thin per event visit
+vs,state,TH,Thüringen,Thüringen,4782,2078946,0.0,500000.0,0.0,0.0,0.0,500000.0,956.4,199.0,230.0,70.0,Thin per resident
+vm,state,BW,Baden-Württemberg,Baden-Württemberg,29209,11238761,3294413.0,5700000.0,0.0,510000.0,309000.0,6210000.0,470.4,93.0,259.9,79.0,Thin on both
+vm,state,BY,Bayern,Bayern,39266,13245503,3227938.0,16000000.0,0.0,1106000.0,80000.0,17106000.0,229.5,45.0,296.4,91.0,Thin on both
+vm,state,BE,Berlin,Berlin,22822,3700577,1194879.0,0.0,1100000.0,630000.0,60000.0,630000.0,3622.5,714.0,616.7,189.0,Above average
+vm,state,BB,Brandenburg,Brandenburg,7839,2551889,244302.0,0.0,0.0,0.0,0.0,0.0,,,307.2,94.0,No events counted
+vm,state,HB,Bremen,Bremen,4004,706915,701199.0,2000000.0,0.0,0.0,0.0,2000000.0,200.2,39.0,566.4,173.0,Thin per event visit
+vm,state,HH,Hamburg,Hamburg,11953,1869473,1469327.0,5500000.0,0.0,0.0,0.0,5500000.0,217.3,43.0,639.4,196.0,Thin per event visit
+vm,state,HE,Hessen,Hessen,30285,6278594,1388938.0,0.0,1000000.0,238000.0,0.0,238000.0,12724.8,2510.0,482.4,148.0,Above average
+vm,state,MV,Mecklenburg-Vorpommern,Mecklenburg-Vorpommern,5225,1573685,474772.0,500000.0,0.0,0.0,75000.0,500000.0,1045.0,206.0,332.0,102.0,Above average
+vm,state,NI,Niedersachsen,Niedersachsen,20990,8000826,1823143.0,2850000.0,2300000.0,603000.0,125000.0,3453000.0,607.9,120.0,262.3,80.0,Thin per resident
+vm,state,NW,Nordrhein-Westfalen,Nordrhein-Westfalen,53085,17986214,8033030.0,15400000.0,0.0,1491000.0,225000.0,16891000.0,314.3,62.0,295.1,90.0,Thin on both
+vm,state,RP,Rheinland-Pfalz,Rheinland-Pfalz,6979,4123022,1334738.0,0.0,0.0,0.0,90000.0,0.0,,,169.3,52.0,No events counted
+vm,state,SL,Saarland,Saarland,2592,1007342,401199.0,0.0,0.0,0.0,0.0,0.0,,,257.3,79.0,No events counted
+vm,state,SN,Sachsen,Sachsen,17030,4026599,1438553.0,0.0,0.0,296000.0,0.0,296000.0,5753.4,1135.0,422.9,129.0,Above average
+vm,state,ST,Sachsen-Anhalt,Sachsen-Anhalt,6222,2120252,426428.0,500000.0,0.0,0.0,0.0,500000.0,1244.4,245.0,293.5,90.0,Thin per resident
+vm,state,SH,Schleswig-Holstein,Schleswig-Holstein,10636,2958519,241145.0,0.0,3500000.0,0.0,85000.0,0.0,,,359.5,110.0,No events counted
+vm,state,TH,Thüringen,Thüringen,4782,2078946,0.0,500000.0,0.0,0.0,0.0,500000.0,956.4,189.0,230.0,70.0,Thin per resident
+vl,state,BW,Baden-Württemberg,Baden-Württemberg,29209,11238761,3294413.0,5700000.0,0.0,510000.0,309000.0,6009000.0,486.1,89.0,259.9,79.0,Thin on both
+vl,state,BY,Bayern,Bayern,39266,13245503,3227938.0,16000000.0,0.0,1106000.0,80000.0,16080000.0,244.2,45.0,296.4,91.0,Thin on both
+vl,state,BE,Berlin,Berlin,22822,3700577,1194879.0,0.0,1100000.0,630000.0,60000.0,60000.0,38036.7,6968.0,616.7,189.0,Above average
+vl,state,BB,Brandenburg,Brandenburg,7839,2551889,244302.0,0.0,0.0,0.0,0.0,0.0,,,307.2,94.0,No events counted
+vl,state,HB,Bremen,Bremen,4004,706915,701199.0,2000000.0,0.0,0.0,0.0,2000000.0,200.2,37.0,566.4,173.0,Thin per event visit
+vl,state,HH,Hamburg,Hamburg,11953,1869473,1469327.0,5500000.0,0.0,0.0,0.0,5500000.0,217.3,40.0,639.4,196.0,Thin per event visit
+vl,state,HE,Hessen,Hessen,30285,6278594,1388938.0,0.0,1000000.0,238000.0,0.0,0.0,,,482.4,148.0,No events counted
+vl,state,MV,Mecklenburg-Vorpommern,Mecklenburg-Vorpommern,5225,1573685,474772.0,500000.0,0.0,0.0,75000.0,575000.0,908.7,166.0,332.0,102.0,Above average
+vl,state,NI,Niedersachsen,Niedersachsen,20990,8000826,1823143.0,2850000.0,2300000.0,603000.0,125000.0,2975000.0,705.5,129.0,262.3,80.0,Thin per resident
+vl,state,NW,Nordrhein-Westfalen,Nordrhein-Westfalen,53085,17986214,8033030.0,15400000.0,0.0,1491000.0,225000.0,15625000.0,339.7,62.0,295.1,90.0,Thin on both
+vl,state,RP,Rheinland-Pfalz,Rheinland-Pfalz,6979,4123022,1334738.0,0.0,0.0,0.0,90000.0,90000.0,7754.4,1421.0,169.3,52.0,Thin per resident
+vl,state,SL,Saarland,Saarland,2592,1007342,401199.0,0.0,0.0,0.0,0.0,0.0,,,257.3,79.0,No events counted
+vl,state,SN,Sachsen,Sachsen,17030,4026599,1438553.0,0.0,0.0,296000.0,0.0,0.0,,,422.9,129.0,No events counted
+vl,state,ST,Sachsen-Anhalt,Sachsen-Anhalt,6222,2120252,426428.0,500000.0,0.0,0.0,0.0,500000.0,1244.4,228.0,293.5,90.0,Thin per resident
+vl,state,SH,Schleswig-Holstein,Schleswig-Holstein,10636,2958519,241145.0,0.0,3500000.0,0.0,85000.0,85000.0,12512.9,2292.0,359.5,110.0,Above average
+vl,state,TH,Thüringen,Thüringen,4782,2078946,0.0,500000.0,0.0,0.0,0.0,500000.0,956.4,175.0,230.0,70.0,Thin per resident
+sm,state,BW,Baden-Württemberg,Baden-Württemberg,29209,11238761,3294413.0,5700000.0,0.0,510000.0,309000.0,510000.0,5727.3,268.0,259.9,79.0,Thin per resident
+sm,state,BY,Bayern,Bayern,39266,13245503,3227938.0,16000000.0,0.0,1106000.0,80000.0,1106000.0,3550.3,166.0,296.4,91.0,Thin per resident
+sm,state,BE,Berlin,Berlin,22822,3700577,1194879.0,0.0,1100000.0,630000.0,60000.0,1730000.0,1319.2,62.0,616.7,189.0,Thin per event visit
+sm,state,BB,Brandenburg,Brandenburg,7839,2551889,244302.0,0.0,0.0,0.0,0.0,0.0,,,307.2,94.0,No events counted
+sm,state,HB,Bremen,Bremen,4004,706915,701199.0,2000000.0,0.0,0.0,0.0,0.0,,,566.4,173.0,No events counted
+sm,state,HH,Hamburg,Hamburg,11953,1869473,1469327.0,5500000.0,0.0,0.0,0.0,0.0,,,639.4,196.0,No events counted
+sm,state,HE,Hessen,Hessen,30285,6278594,1388938.0,0.0,1000000.0,238000.0,0.0,1238000.0,2446.3,114.0,482.4,148.0,Above average
+sm,state,MV,Mecklenburg-Vorpommern,Mecklenburg-Vorpommern,5225,1573685,474772.0,500000.0,0.0,0.0,75000.0,0.0,,,332.0,102.0,No events counted
+sm,state,NI,Niedersachsen,Niedersachsen,20990,8000826,1823143.0,2850000.0,2300000.0,603000.0,125000.0,2903000.0,723.0,34.0,262.3,80.0,Thin on both
+sm,state,NW,Nordrhein-Westfalen,Nordrhein-Westfalen,53085,17986214,8033030.0,15400000.0,0.0,1491000.0,225000.0,1491000.0,3560.4,167.0,295.1,90.0,Thin per resident
+sm,state,RP,Rheinland-Pfalz,Rheinland-Pfalz,6979,4123022,1334738.0,0.0,0.0,0.0,90000.0,0.0,,,169.3,52.0,No events counted
+sm,state,SL,Saarland,Saarland,2592,1007342,401199.0,0.0,0.0,0.0,0.0,0.0,,,257.3,79.0,No events counted
+sm,state,SN,Sachsen,Sachsen,17030,4026599,1438553.0,0.0,0.0,296000.0,0.0,296000.0,5753.4,269.0,422.9,129.0,Above average
+sm,state,ST,Sachsen-Anhalt,Sachsen-Anhalt,6222,2120252,426428.0,500000.0,0.0,0.0,0.0,0.0,,,293.5,90.0,No events counted
+sm,state,SH,Schleswig-Holstein,Schleswig-Holstein,10636,2958519,241145.0,0.0,3500000.0,0.0,85000.0,3500000.0,303.9,14.0,359.5,110.0,Thin per event visit
+sm,state,TH,Thüringen,Thüringen,4782,2078946,0.0,500000.0,0.0,0.0,0.0,0.0,,,230.0,70.0,No events counted
+sl,state,BW,Baden-Württemberg,Baden-Württemberg,29209,11238761,3294413.0,5700000.0,0.0,510000.0,309000.0,309000.0,9452.8,310.0,259.9,79.0,Thin per resident
+sl,state,BY,Bayern,Bayern,39266,13245503,3227938.0,16000000.0,0.0,1106000.0,80000.0,80000.0,49082.5,1609.0,296.4,91.0,Thin per resident
+sl,state,BE,Berlin,Berlin,22822,3700577,1194879.0,0.0,1100000.0,630000.0,60000.0,1160000.0,1967.4,65.0,616.7,189.0,Thin per event visit
+sl,state,BB,Brandenburg,Brandenburg,7839,2551889,244302.0,0.0,0.0,0.0,0.0,0.0,,,307.2,94.0,No events counted
+sl,state,HB,Bremen,Bremen,4004,706915,701199.0,2000000.0,0.0,0.0,0.0,0.0,,,566.4,173.0,No events counted
+sl,state,HH,Hamburg,Hamburg,11953,1869473,1469327.0,5500000.0,0.0,0.0,0.0,0.0,,,639.4,196.0,No events counted
+sl,state,HE,Hessen,Hessen,30285,6278594,1388938.0,0.0,1000000.0,238000.0,0.0,1000000.0,3028.5,99.0,482.4,148.0,Thin per event visit
+sl,state,MV,Mecklenburg-Vorpommern,Mecklenburg-Vorpommern,5225,1573685,474772.0,500000.0,0.0,0.0,75000.0,75000.0,6966.7,228.0,332.0,102.0,Above average
+sl,state,NI,Niedersachsen,Niedersachsen,20990,8000826,1823143.0,2850000.0,2300000.0,603000.0,125000.0,2425000.0,865.6,28.0,262.3,80.0,Thin on both
+sl,state,NW,Nordrhein-Westfalen,Nordrhein-Westfalen,53085,17986214,8033030.0,15400000.0,0.0,1491000.0,225000.0,225000.0,23593.3,774.0,295.1,90.0,Thin per resident
+sl,state,RP,Rheinland-Pfalz,Rheinland-Pfalz,6979,4123022,1334738.0,0.0,0.0,0.0,90000.0,90000.0,7754.4,254.0,169.3,52.0,Thin per resident
+sl,state,SL,Saarland,Saarland,2592,1007342,401199.0,0.0,0.0,0.0,0.0,0.0,,,257.3,79.0,No events counted
+sl,state,SN,Sachsen,Sachsen,17030,4026599,1438553.0,0.0,0.0,296000.0,0.0,0.0,,,422.9,129.0,No events counted
+sl,state,ST,Sachsen-Anhalt,Sachsen-Anhalt,6222,2120252,426428.0,500000.0,0.0,0.0,0.0,0.0,,,293.5,90.0,No events counted
+sl,state,SH,Schleswig-Holstein,Schleswig-Holstein,10636,2958519,241145.0,0.0,3500000.0,0.0,85000.0,3585000.0,296.7,10.0,359.5,110.0,Thin per event visit
+sl,state,TH,Thüringen,Thüringen,4782,2078946,0.0,500000.0,0.0,0.0,0.0,0.0,,,230.0,70.0,No events counted
+ml,state,BW,Baden-Württemberg,Baden-Württemberg,29209,11238761,3294413.0,5700000.0,0.0,510000.0,309000.0,819000.0,3566.4,77.0,259.9,79.0,Thin on both
+ml,state,BY,Bayern,Bayern,39266,13245503,3227938.0,16000000.0,0.0,1106000.0,80000.0,1186000.0,3310.8,72.0,296.4,91.0,Thin on both
+ml,state,BE,Berlin,Berlin,22822,3700577,1194879.0,0.0,1100000.0,630000.0,60000.0,690000.0,3307.5,72.0,616.7,189.0,Thin per event visit
+ml,state,BB,Brandenburg,Brandenburg,7839,2551889,244302.0,0.0,0.0,0.0,0.0,0.0,,,307.2,94.0,No events counted
+ml,state,HB,Bremen,Bremen,4004,706915,701199.0,2000000.0,0.0,0.0,0.0,0.0,,,566.4,173.0,No events counted
+ml,state,HH,Hamburg,Hamburg,11953,1869473,1469327.0,5500000.0,0.0,0.0,0.0,0.0,,,639.4,196.0,No events counted
+ml,state,HE,Hessen,Hessen,30285,6278594,1388938.0,0.0,1000000.0,238000.0,0.0,238000.0,12724.8,276.0,482.4,148.0,Above average
+ml,state,MV,Mecklenburg-Vorpommern,Mecklenburg-Vorpommern,5225,1573685,474772.0,500000.0,0.0,0.0,75000.0,75000.0,6966.7,151.0,332.0,102.0,Above average
+ml,state,NI,Niedersachsen,Niedersachsen,20990,8000826,1823143.0,2850000.0,2300000.0,603000.0,125000.0,728000.0,2883.2,63.0,262.3,80.0,Thin on both
+ml,state,NW,Nordrhein-Westfalen,Nordrhein-Westfalen,53085,17986214,8033030.0,15400000.0,0.0,1491000.0,225000.0,1716000.0,3093.5,67.0,295.1,90.0,Thin on both
+ml,state,RP,Rheinland-Pfalz,Rheinland-Pfalz,6979,4123022,1334738.0,0.0,0.0,0.0,90000.0,90000.0,7754.4,168.0,169.3,52.0,Thin per resident
+ml,state,SL,Saarland,Saarland,2592,1007342,401199.0,0.0,0.0,0.0,0.0,0.0,,,257.3,79.0,No events counted
+ml,state,SN,Sachsen,Sachsen,17030,4026599,1438553.0,0.0,0.0,296000.0,0.0,296000.0,5753.4,125.0,422.9,129.0,Above average
+ml,state,ST,Sachsen-Anhalt,Sachsen-Anhalt,6222,2120252,426428.0,500000.0,0.0,0.0,0.0,0.0,,,293.5,90.0,No events counted
+ml,state,SH,Schleswig-Holstein,Schleswig-Holstein,10636,2958519,241145.0,0.0,3500000.0,0.0,85000.0,85000.0,12512.9,272.0,359.5,110.0,Above average
+ml,state,TH,Thüringen,Thüringen,4782,2078946,0.0,500000.0,0.0,0.0,0.0,0.0,,,230.0,70.0,No events counted
+fvs,state,BW,Baden-Württemberg,Baden-Württemberg,29209,11238761,3294413.0,5700000.0,0.0,510000.0,309000.0,8994413.0,324.7,98.0,259.9,79.0,Thin on both
+fvs,state,BY,Bayern,Bayern,39266,13245503,3227938.0,16000000.0,0.0,1106000.0,80000.0,19227938.0,204.2,62.0,296.4,91.0,Thin on both
+fvs,state,BE,Berlin,Berlin,22822,3700577,1194879.0,0.0,1100000.0,630000.0,60000.0,2294879.0,994.5,301.0,616.7,189.0,Above average
+fvs,state,BB,Brandenburg,Brandenburg,7839,2551889,244302.0,0.0,0.0,0.0,0.0,244302.0,3208.7,970.0,307.2,94.0,Thin per resident
+fvs,state,HB,Bremen,Bremen,4004,706915,701199.0,2000000.0,0.0,0.0,0.0,2701199.0,148.2,45.0,566.4,173.0,Thin per event visit
+fvs,state,HH,Hamburg,Hamburg,11953,1869473,1469327.0,5500000.0,0.0,0.0,0.0,6969327.0,171.5,52.0,639.4,196.0,Thin per event visit
+fvs,state,HE,Hessen,Hessen,30285,6278594,1388938.0,0.0,1000000.0,238000.0,0.0,2388938.0,1267.7,383.0,482.4,148.0,Above average
+fvs,state,MV,Mecklenburg-Vorpommern,Mecklenburg-Vorpommern,5225,1573685,474772.0,500000.0,0.0,0.0,75000.0,974772.0,536.0,162.0,332.0,102.0,Above average
+fvs,state,NI,Niedersachsen,Niedersachsen,20990,8000826,1823143.0,2850000.0,2300000.0,603000.0,125000.0,6973143.0,301.0,91.0,262.3,80.0,Thin on both
+fvs,state,NW,Nordrhein-Westfalen,Nordrhein-Westfalen,53085,17986214,8033030.0,15400000.0,0.0,1491000.0,225000.0,23433030.0,226.5,69.0,295.1,90.0,Thin on both
+fvs,state,RP,Rheinland-Pfalz,Rheinland-Pfalz,6979,4123022,1334738.0,0.0,0.0,0.0,90000.0,1334738.0,522.9,158.0,169.3,52.0,Thin per resident
+fvs,state,SL,Saarland,Saarland,2592,1007342,401199.0,0.0,0.0,0.0,0.0,401199.0,646.1,195.0,257.3,79.0,Thin per resident
+fvs,state,SN,Sachsen,Sachsen,17030,4026599,1438553.0,0.0,0.0,296000.0,0.0,1438553.0,1183.8,358.0,422.9,129.0,Above average
+fvs,state,ST,Sachsen-Anhalt,Sachsen-Anhalt,6222,2120252,426428.0,500000.0,0.0,0.0,0.0,926428.0,671.6,203.0,293.5,90.0,Thin per resident
+fvs,state,SH,Schleswig-Holstein,Schleswig-Holstein,10636,2958519,241145.0,0.0,3500000.0,0.0,85000.0,3741145.0,284.3,86.0,359.5,110.0,Thin per event visit
+fvs,state,TH,Thüringen,Thüringen,4782,2078946,0.0,500000.0,0.0,0.0,0.0,500000.0,956.4,289.0,230.0,70.0,Thin per resident
+fvm,state,BW,Baden-Württemberg,Baden-Württemberg,29209,11238761,3294413.0,5700000.0,0.0,510000.0,309000.0,9504413.0,307.3,90.0,259.9,79.0,Thin on both
+fvm,state,BY,Bayern,Bayern,39266,13245503,3227938.0,16000000.0,0.0,1106000.0,80000.0,20333938.0,193.1,56.0,296.4,91.0,Thin on both
+fvm,state,BE,Berlin,Berlin,22822,3700577,1194879.0,0.0,1100000.0,630000.0,60000.0,1824879.0,1250.6,364.0,616.7,189.0,Above average
+fvm,state,BB,Brandenburg,Brandenburg,7839,2551889,244302.0,0.0,0.0,0.0,0.0,244302.0,3208.7,935.0,307.2,94.0,Thin per resident
+fvm,state,HB,Bremen,Bremen,4004,706915,701199.0,2000000.0,0.0,0.0,0.0,2701199.0,148.2,43.0,566.4,173.0,Thin per event visit
+fvm,state,HH,Hamburg,Hamburg,11953,1869473,1469327.0,5500000.0,0.0,0.0,0.0,6969327.0,171.5,50.0,639.4,196.0,Thin per event visit
+fvm,state,HE,Hessen,Hessen,30285,6278594,1388938.0,0.0,1000000.0,238000.0,0.0,1626938.0,1861.5,542.0,482.4,148.0,Above average
+fvm,state,MV,Mecklenburg-Vorpommern,Mecklenburg-Vorpommern,5225,1573685,474772.0,500000.0,0.0,0.0,75000.0,974772.0,536.0,156.0,332.0,102.0,Above average
+fvm,state,NI,Niedersachsen,Niedersachsen,20990,8000826,1823143.0,2850000.0,2300000.0,603000.0,125000.0,5276143.0,397.8,116.0,262.3,80.0,Thin per resident
+fvm,state,NW,Nordrhein-Westfalen,Nordrhein-Westfalen,53085,17986214,8033030.0,15400000.0,0.0,1491000.0,225000.0,24924030.0,213.0,62.0,295.1,90.0,Thin on both
+fvm,state,RP,Rheinland-Pfalz,Rheinland-Pfalz,6979,4123022,1334738.0,0.0,0.0,0.0,90000.0,1334738.0,522.9,152.0,169.3,52.0,Thin per resident
+fvm,state,SL,Saarland,Saarland,2592,1007342,401199.0,0.0,0.0,0.0,0.0,401199.0,646.1,188.0,257.3,79.0,Thin per resident
+fvm,state,SN,Sachsen,Sachsen,17030,4026599,1438553.0,0.0,0.0,296000.0,0.0,1734553.0,981.8,286.0,422.9,129.0,Above average
+fvm,state,ST,Sachsen-Anhalt,Sachsen-Anhalt,6222,2120252,426428.0,500000.0,0.0,0.0,0.0,926428.0,671.6,196.0,293.5,90.0,Thin per resident
+fvm,state,SH,Schleswig-Holstein,Schleswig-Holstein,10636,2958519,241145.0,0.0,3500000.0,0.0,85000.0,241145.0,4410.6,1285.0,359.5,110.0,Above average
+fvm,state,TH,Thüringen,Thüringen,4782,2078946,0.0,500000.0,0.0,0.0,0.0,500000.0,956.4,279.0,230.0,70.0,Thin per resident
+fvl,state,BW,Baden-Württemberg,Baden-Württemberg,29209,11238761,3294413.0,5700000.0,0.0,510000.0,309000.0,9303413.0,314.0,87.0,259.9,79.0,Thin on both
+fvl,state,BY,Bayern,Bayern,39266,13245503,3227938.0,16000000.0,0.0,1106000.0,80000.0,19307938.0,203.4,56.0,296.4,91.0,Thin on both
+fvl,state,BE,Berlin,Berlin,22822,3700577,1194879.0,0.0,1100000.0,630000.0,60000.0,1254879.0,1818.7,504.0,616.7,189.0,Above average
+fvl,state,BB,Brandenburg,Brandenburg,7839,2551889,244302.0,0.0,0.0,0.0,0.0,244302.0,3208.7,890.0,307.2,94.0,Thin per resident
+fvl,state,HB,Bremen,Bremen,4004,706915,701199.0,2000000.0,0.0,0.0,0.0,2701199.0,148.2,41.0,566.4,173.0,Thin per event visit
+fvl,state,HH,Hamburg,Hamburg,11953,1869473,1469327.0,5500000.0,0.0,0.0,0.0,6969327.0,171.5,48.0,639.4,196.0,Thin per event visit
+fvl,state,HE,Hessen,Hessen,30285,6278594,1388938.0,0.0,1000000.0,238000.0,0.0,1388938.0,2180.4,605.0,482.4,148.0,Above average
+fvl,state,MV,Mecklenburg-Vorpommern,Mecklenburg-Vorpommern,5225,1573685,474772.0,500000.0,0.0,0.0,75000.0,1049772.0,497.7,138.0,332.0,102.0,Above average
+fvl,state,NI,Niedersachsen,Niedersachsen,20990,8000826,1823143.0,2850000.0,2300000.0,603000.0,125000.0,4798143.0,437.5,121.0,262.3,80.0,Thin per resident
+fvl,state,NW,Nordrhein-Westfalen,Nordrhein-Westfalen,53085,17986214,8033030.0,15400000.0,0.0,1491000.0,225000.0,23658030.0,224.4,62.0,295.1,90.0,Thin on both
+fvl,state,RP,Rheinland-Pfalz,Rheinland-Pfalz,6979,4123022,1334738.0,0.0,0.0,0.0,90000.0,1424738.0,489.8,136.0,169.3,52.0,Thin per resident
+fvl,state,SL,Saarland,Saarland,2592,1007342,401199.0,0.0,0.0,0.0,0.0,401199.0,646.1,179.0,257.3,79.0,Thin per resident
+fvl,state,SN,Sachsen,Sachsen,17030,4026599,1438553.0,0.0,0.0,296000.0,0.0,1438553.0,1183.8,328.0,422.9,129.0,Above average
+fvl,state,ST,Sachsen-Anhalt,Sachsen-Anhalt,6222,2120252,426428.0,500000.0,0.0,0.0,0.0,926428.0,671.6,186.0,293.5,90.0,Thin per resident
+fvl,state,SH,Schleswig-Holstein,Schleswig-Holstein,10636,2958519,241145.0,0.0,3500000.0,0.0,85000.0,326145.0,3261.1,904.0,359.5,110.0,Above average
+fvl,state,TH,Thüringen,Thüringen,4782,2078946,0.0,500000.0,0.0,0.0,0.0,500000.0,956.4,265.0,230.0,70.0,Thin per resident
+fsm,state,BW,Baden-Württemberg,Baden-Württemberg,29209,11238761,3294413.0,5700000.0,0.0,510000.0,309000.0,3804413.0,767.8,108.0,259.9,79.0,Thin per resident
+fsm,state,BY,Bayern,Bayern,39266,13245503,3227938.0,16000000.0,0.0,1106000.0,80000.0,4333938.0,906.0,128.0,296.4,91.0,Thin per resident
+fsm,state,BE,Berlin,Berlin,22822,3700577,1194879.0,0.0,1100000.0,630000.0,60000.0,2924879.0,780.3,110.0,616.7,189.0,Above average
+fsm,state,BB,Brandenburg,Brandenburg,7839,2551889,244302.0,0.0,0.0,0.0,0.0,244302.0,3208.7,452.0,307.2,94.0,Thin per resident
+fsm,state,HB,Bremen,Bremen,4004,706915,701199.0,2000000.0,0.0,0.0,0.0,701199.0,571.0,80.0,566.4,173.0,Thin per event visit
+fsm,state,HH,Hamburg,Hamburg,11953,1869473,1469327.0,5500000.0,0.0,0.0,0.0,1469327.0,813.5,115.0,639.4,196.0,Above average
+fsm,state,HE,Hessen,Hessen,30285,6278594,1388938.0,0.0,1000000.0,238000.0,0.0,2626938.0,1152.9,162.0,482.4,148.0,Above average
+fsm,state,MV,Mecklenburg-Vorpommern,Mecklenburg-Vorpommern,5225,1573685,474772.0,500000.0,0.0,0.0,75000.0,474772.0,1100.5,155.0,332.0,102.0,Above average
+fsm,state,NI,Niedersachsen,Niedersachsen,20990,8000826,1823143.0,2850000.0,2300000.0,603000.0,125000.0,4726143.0,444.1,63.0,262.3,80.0,Thin on both
+fsm,state,NW,Nordrhein-Westfalen,Nordrhein-Westfalen,53085,17986214,8033030.0,15400000.0,0.0,1491000.0,225000.0,9524030.0,557.4,79.0,295.1,90.0,Thin on both
+fsm,state,RP,Rheinland-Pfalz,Rheinland-Pfalz,6979,4123022,1334738.0,0.0,0.0,0.0,90000.0,1334738.0,522.9,74.0,169.3,52.0,Thin on both
+fsm,state,SL,Saarland,Saarland,2592,1007342,401199.0,0.0,0.0,0.0,0.0,401199.0,646.1,91.0,257.3,79.0,Thin on both
+fsm,state,SN,Sachsen,Sachsen,17030,4026599,1438553.0,0.0,0.0,296000.0,0.0,1734553.0,981.8,138.0,422.9,129.0,Above average
+fsm,state,ST,Sachsen-Anhalt,Sachsen-Anhalt,6222,2120252,426428.0,500000.0,0.0,0.0,0.0,426428.0,1459.1,206.0,293.5,90.0,Thin per resident
+fsm,state,SH,Schleswig-Holstein,Schleswig-Holstein,10636,2958519,241145.0,0.0,3500000.0,0.0,85000.0,3741145.0,284.3,40.0,359.5,110.0,Thin per event visit
+fsm,state,TH,Thüringen,Thüringen,4782,2078946,0.0,500000.0,0.0,0.0,0.0,0.0,,,230.0,70.0,No events counted
+fsl,state,BW,Baden-Württemberg,Baden-Württemberg,29209,11238761,3294413.0,5700000.0,0.0,510000.0,309000.0,3603413.0,810.6,103.0,259.9,79.0,Thin per resident
+fsl,state,BY,Bayern,Bayern,39266,13245503,3227938.0,16000000.0,0.0,1106000.0,80000.0,3307938.0,1187.0,151.0,296.4,91.0,Thin per resident
+fsl,state,BE,Berlin,Berlin,22822,3700577,1194879.0,0.0,1100000.0,630000.0,60000.0,2354879.0,969.1,123.0,616.7,189.0,Above average
+fsl,state,BB,Brandenburg,Brandenburg,7839,2551889,244302.0,0.0,0.0,0.0,0.0,244302.0,3208.7,407.0,307.2,94.0,Thin per resident
+fsl,state,HB,Bremen,Bremen,4004,706915,701199.0,2000000.0,0.0,0.0,0.0,701199.0,571.0,72.0,566.4,173.0,Thin per event visit
+fsl,state,HH,Hamburg,Hamburg,11953,1869473,1469327.0,5500000.0,0.0,0.0,0.0,1469327.0,813.5,103.0,639.4,196.0,Above average
+fsl,state,HE,Hessen,Hessen,30285,6278594,1388938.0,0.0,1000000.0,238000.0,0.0,2388938.0,1267.7,161.0,482.4,148.0,Above average
+fsl,state,MV,Mecklenburg-Vorpommern,Mecklenburg-Vorpommern,5225,1573685,474772.0,500000.0,0.0,0.0,75000.0,549772.0,950.4,121.0,332.0,102.0,Above average
+fsl,state,NI,Niedersachsen,Niedersachsen,20990,8000826,1823143.0,2850000.0,2300000.0,603000.0,125000.0,4248143.0,494.1,63.0,262.3,80.0,Thin on both
+fsl,state,NW,Nordrhein-Westfalen,Nordrhein-Westfalen,53085,17986214,8033030.0,15400000.0,0.0,1491000.0,225000.0,8258030.0,642.8,82.0,295.1,90.0,Thin on both
+fsl,state,RP,Rheinland-Pfalz,Rheinland-Pfalz,6979,4123022,1334738.0,0.0,0.0,0.0,90000.0,1424738.0,489.8,62.0,169.3,52.0,Thin on both
+fsl,state,SL,Saarland,Saarland,2592,1007342,401199.0,0.0,0.0,0.0,0.0,401199.0,646.1,82.0,257.3,79.0,Thin on both
+fsl,state,SN,Sachsen,Sachsen,17030,4026599,1438553.0,0.0,0.0,296000.0,0.0,1438553.0,1183.8,150.0,422.9,129.0,Above average
+fsl,state,ST,Sachsen-Anhalt,Sachsen-Anhalt,6222,2120252,426428.0,500000.0,0.0,0.0,0.0,426428.0,1459.1,185.0,293.5,90.0,Thin per resident
+fsl,state,SH,Schleswig-Holstein,Schleswig-Holstein,10636,2958519,241145.0,0.0,3500000.0,0.0,85000.0,3826145.0,278.0,35.0,359.5,110.0,Thin per event visit
+fsl,state,TH,Thüringen,Thüringen,4782,2078946,0.0,500000.0,0.0,0.0,0.0,0.0,,,230.0,70.0,No events counted
+fml,state,BW,Baden-Württemberg,Baden-Württemberg,29209,11238761,3294413.0,5700000.0,0.0,510000.0,309000.0,4113413.0,710.1,82.0,259.9,79.0,Thin on both
+fml,state,BY,Bayern,Bayern,39266,13245503,3227938.0,16000000.0,0.0,1106000.0,80000.0,4413938.0,889.6,103.0,296.4,91.0,Thin per resident
+fml,state,BE,Berlin,Berlin,22822,3700577,1194879.0,0.0,1100000.0,630000.0,60000.0,1884879.0,1210.8,140.0,616.7,189.0,Above average
+fml,state,BB,Brandenburg,Brandenburg,7839,2551889,244302.0,0.0,0.0,0.0,0.0,244302.0,3208.7,372.0,307.2,94.0,Thin per resident
+fml,state,HB,Bremen,Bremen,4004,706915,701199.0,2000000.0,0.0,0.0,0.0,701199.0,571.0,66.0,566.4,173.0,Thin per event visit
+fml,state,HH,Hamburg,Hamburg,11953,1869473,1469327.0,5500000.0,0.0,0.0,0.0,1469327.0,813.5,94.0,639.4,196.0,Thin per event visit
+fml,state,HE,Hessen,Hessen,30285,6278594,1388938.0,0.0,1000000.0,238000.0,0.0,1626938.0,1861.5,216.0,482.4,148.0,Above average
+fml,state,MV,Mecklenburg-Vorpommern,Mecklenburg-Vorpommern,5225,1573685,474772.0,500000.0,0.0,0.0,75000.0,549772.0,950.4,110.0,332.0,102.0,Above average
+fml,state,NI,Niedersachsen,Niedersachsen,20990,8000826,1823143.0,2850000.0,2300000.0,603000.0,125000.0,2551143.0,822.8,95.0,262.3,80.0,Thin on both
+fml,state,NW,Nordrhein-Westfalen,Nordrhein-Westfalen,53085,17986214,8033030.0,15400000.0,0.0,1491000.0,225000.0,9749030.0,544.5,63.0,295.1,90.0,Thin on both
+fml,state,RP,Rheinland-Pfalz,Rheinland-Pfalz,6979,4123022,1334738.0,0.0,0.0,0.0,90000.0,1424738.0,489.8,57.0,169.3,52.0,Thin on both
+fml,state,SL,Saarland,Saarland,2592,1007342,401199.0,0.0,0.0,0.0,0.0,401199.0,646.1,75.0,257.3,79.0,Thin on both
+fml,state,SN,Sachsen,Sachsen,17030,4026599,1438553.0,0.0,0.0,296000.0,0.0,1734553.0,981.8,114.0,422.9,129.0,Above average
+fml,state,ST,Sachsen-Anhalt,Sachsen-Anhalt,6222,2120252,426428.0,500000.0,0.0,0.0,0.0,426428.0,1459.1,169.0,293.5,90.0,Thin per resident
+fml,state,SH,Schleswig-Holstein,Schleswig-Holstein,10636,2958519,241145.0,0.0,3500000.0,0.0,85000.0,326145.0,3261.1,378.0,359.5,110.0,Above average
+fml,state,TH,Thüringen,Thüringen,4782,2078946,0.0,500000.0,0.0,0.0,0.0,0.0,,,230.0,70.0,No events counted
+vsm,state,BW,Baden-Württemberg,Baden-Württemberg,29209,11238761,3294413.0,5700000.0,0.0,510000.0,309000.0,6210000.0,470.4,106.0,259.9,79.0,Thin per resident
+vsm,state,BY,Bayern,Bayern,39266,13245503,3227938.0,16000000.0,0.0,1106000.0,80000.0,17106000.0,229.5,52.0,296.4,91.0,Thin on both
+vsm,state,BE,Berlin,Berlin,22822,3700577,1194879.0,0.0,1100000.0,630000.0,60000.0,1730000.0,1319.2,298.0,616.7,189.0,Above average
+vsm,state,BB,Brandenburg,Brandenburg,7839,2551889,244302.0,0.0,0.0,0.0,0.0,0.0,,,307.2,94.0,No events counted
+vsm,state,HB,Bremen,Bremen,4004,706915,701199.0,2000000.0,0.0,0.0,0.0,2000000.0,200.2,45.0,566.4,173.0,Thin per event visit
+vsm,state,HH,Hamburg,Hamburg,11953,1869473,1469327.0,5500000.0,0.0,0.0,0.0,5500000.0,217.3,49.0,639.4,196.0,Thin per event visit
+vsm,state,HE,Hessen,Hessen,30285,6278594,1388938.0,0.0,1000000.0,238000.0,0.0,1238000.0,2446.3,553.0,482.4,148.0,Above average
+vsm,state,MV,Mecklenburg-Vorpommern,Mecklenburg-Vorpommern,5225,1573685,474772.0,500000.0,0.0,0.0,75000.0,500000.0,1045.0,236.0,332.0,102.0,Above average
+vsm,state,NI,Niedersachsen,Niedersachsen,20990,8000826,1823143.0,2850000.0,2300000.0,603000.0,125000.0,5753000.0,364.9,83.0,262.3,80.0,Thin on both
+vsm,state,NW,Nordrhein-Westfalen,Nordrhein-Westfalen,53085,17986214,8033030.0,15400000.0,0.0,1491000.0,225000.0,16891000.0,314.3,71.0,295.1,90.0,Thin on both
+vsm,state,RP,Rheinland-Pfalz,Rheinland-Pfalz,6979,4123022,1334738.0,0.0,0.0,0.0,90000.0,0.0,,,169.3,52.0,No events counted
+vsm,state,SL,Saarland,Saarland,2592,1007342,401199.0,0.0,0.0,0.0,0.0,0.0,,,257.3,79.0,No events counted
+vsm,state,SN,Sachsen,Sachsen,17030,4026599,1438553.0,0.0,0.0,296000.0,0.0,296000.0,5753.4,1301.0,422.9,129.0,Above average
+vsm,state,ST,Sachsen-Anhalt,Sachsen-Anhalt,6222,2120252,426428.0,500000.0,0.0,0.0,0.0,500000.0,1244.4,281.0,293.5,90.0,Thin per resident
+vsm,state,SH,Schleswig-Holstein,Schleswig-Holstein,10636,2958519,241145.0,0.0,3500000.0,0.0,85000.0,3500000.0,303.9,69.0,359.5,110.0,Thin per event visit
+vsm,state,TH,Thüringen,Thüringen,4782,2078946,0.0,500000.0,0.0,0.0,0.0,500000.0,956.4,216.0,230.0,70.0,Thin per resident
+vsl,state,BW,Baden-Württemberg,Baden-Württemberg,29209,11238761,3294413.0,5700000.0,0.0,510000.0,309000.0,6009000.0,486.1,103.0,259.9,79.0,Thin per resident
+vsl,state,BY,Bayern,Bayern,39266,13245503,3227938.0,16000000.0,0.0,1106000.0,80000.0,16080000.0,244.2,52.0,296.4,91.0,Thin on both
+vsl,state,BE,Berlin,Berlin,22822,3700577,1194879.0,0.0,1100000.0,630000.0,60000.0,1160000.0,1967.4,417.0,616.7,189.0,Above average
+vsl,state,BB,Brandenburg,Brandenburg,7839,2551889,244302.0,0.0,0.0,0.0,0.0,0.0,,,307.2,94.0,No events counted
+vsl,state,HB,Bremen,Bremen,4004,706915,701199.0,2000000.0,0.0,0.0,0.0,2000000.0,200.2,42.0,566.4,173.0,Thin per event visit
+vsl,state,HH,Hamburg,Hamburg,11953,1869473,1469327.0,5500000.0,0.0,0.0,0.0,5500000.0,217.3,46.0,639.4,196.0,Thin per event visit
+vsl,state,HE,Hessen,Hessen,30285,6278594,1388938.0,0.0,1000000.0,238000.0,0.0,1000000.0,3028.5,642.0,482.4,148.0,Above average
+vsl,state,MV,Mecklenburg-Vorpommern,Mecklenburg-Vorpommern,5225,1573685,474772.0,500000.0,0.0,0.0,75000.0,575000.0,908.7,193.0,332.0,102.0,Above average
+vsl,state,NI,Niedersachsen,Niedersachsen,20990,8000826,1823143.0,2850000.0,2300000.0,603000.0,125000.0,5275000.0,397.9,84.0,262.3,80.0,Thin on both
+vsl,state,NW,Nordrhein-Westfalen,Nordrhein-Westfalen,53085,17986214,8033030.0,15400000.0,0.0,1491000.0,225000.0,15625000.0,339.7,72.0,295.1,90.0,Thin on both
+vsl,state,RP,Rheinland-Pfalz,Rheinland-Pfalz,6979,4123022,1334738.0,0.0,0.0,0.0,90000.0,90000.0,7754.4,1645.0,169.3,52.0,Thin per resident
+vsl,state,SL,Saarland,Saarland,2592,1007342,401199.0,0.0,0.0,0.0,0.0,0.0,,,257.3,79.0,No events counted
+vsl,state,SN,Sachsen,Sachsen,17030,4026599,1438553.0,0.0,0.0,296000.0,0.0,0.0,,,422.9,129.0,No events counted
+vsl,state,ST,Sachsen-Anhalt,Sachsen-Anhalt,6222,2120252,426428.0,500000.0,0.0,0.0,0.0,500000.0,1244.4,264.0,293.5,90.0,Thin per resident
+vsl,state,SH,Schleswig-Holstein,Schleswig-Holstein,10636,2958519,241145.0,0.0,3500000.0,0.0,85000.0,3585000.0,296.7,63.0,359.5,110.0,Thin per event visit
+vsl,state,TH,Thüringen,Thüringen,4782,2078946,0.0,500000.0,0.0,0.0,0.0,500000.0,956.4,203.0,230.0,70.0,Thin per resident
+vml,state,BW,Baden-Württemberg,Baden-Württemberg,29209,11238761,3294413.0,5700000.0,0.0,510000.0,309000.0,6519000.0,448.1,90.0,259.9,79.0,Thin on both
+vml,state,BY,Bayern,Bayern,39266,13245503,3227938.0,16000000.0,0.0,1106000.0,80000.0,17186000.0,228.5,46.0,296.4,91.0,Thin on both
+vml,state,BE,Berlin,Berlin,22822,3700577,1194879.0,0.0,1100000.0,630000.0,60000.0,690000.0,3307.5,665.0,616.7,189.0,Above average
+vml,state,BB,Brandenburg,Brandenburg,7839,2551889,244302.0,0.0,0.0,0.0,0.0,0.0,,,307.2,94.0,No events counted
+vml,state,HB,Bremen,Bremen,4004,706915,701199.0,2000000.0,0.0,0.0,0.0,2000000.0,200.2,40.0,566.4,173.0,Thin per event visit
+vml,state,HH,Hamburg,Hamburg,11953,1869473,1469327.0,5500000.0,0.0,0.0,0.0,5500000.0,217.3,44.0,639.4,196.0,Thin per event visit
+vml,state,HE,Hessen,Hessen,30285,6278594,1388938.0,0.0,1000000.0,238000.0,0.0,238000.0,12724.8,2558.0,482.4,148.0,Above average
+vml,state,MV,Mecklenburg-Vorpommern,Mecklenburg-Vorpommern,5225,1573685,474772.0,500000.0,0.0,0.0,75000.0,575000.0,908.7,183.0,332.0,102.0,Above average
+vml,state,NI,Niedersachsen,Niedersachsen,20990,8000826,1823143.0,2850000.0,2300000.0,603000.0,125000.0,3578000.0,586.6,118.0,262.3,80.0,Thin per resident
+vml,state,NW,Nordrhein-Westfalen,Nordrhein-Westfalen,53085,17986214,8033030.0,15400000.0,0.0,1491000.0,225000.0,17116000.0,310.1,62.0,295.1,90.0,Thin on both
+vml,state,RP,Rheinland-Pfalz,Rheinland-Pfalz,6979,4123022,1334738.0,0.0,0.0,0.0,90000.0,90000.0,7754.4,1559.0,169.3,52.0,Thin per resident
+vml,state,SL,Saarland,Saarland,2592,1007342,401199.0,0.0,0.0,0.0,0.0,0.0,,,257.3,79.0,No events counted
+vml,state,SN,Sachsen,Sachsen,17030,4026599,1438553.0,0.0,0.0,296000.0,0.0,296000.0,5753.4,1157.0,422.9,129.0,Above average
+vml,state,ST,Sachsen-Anhalt,Sachsen-Anhalt,6222,2120252,426428.0,500000.0,0.0,0.0,0.0,500000.0,1244.4,250.0,293.5,90.0,Thin per resident
+vml,state,SH,Schleswig-Holstein,Schleswig-Holstein,10636,2958519,241145.0,0.0,3500000.0,0.0,85000.0,85000.0,12512.9,2516.0,359.5,110.0,Above average
+vml,state,TH,Thüringen,Thüringen,4782,2078946,0.0,500000.0,0.0,0.0,0.0,500000.0,956.4,192.0,230.0,70.0,Thin per resident
+sml,state,BW,Baden-Württemberg,Baden-Württemberg,29209,11238761,3294413.0,5700000.0,0.0,510000.0,309000.0,819000.0,3566.4,181.0,259.9,79.0,Thin per resident
+sml,state,BY,Bayern,Bayern,39266,13245503,3227938.0,16000000.0,0.0,1106000.0,80000.0,1186000.0,3310.8,168.0,296.4,91.0,Thin per resident
+sml,state,BE,Berlin,Berlin,22822,3700577,1194879.0,0.0,1100000.0,630000.0,60000.0,1790000.0,1275.0,65.0,616.7,189.0,Thin per event visit
+sml,state,BB,Brandenburg,Brandenburg,7839,2551889,244302.0,0.0,0.0,0.0,0.0,0.0,,,307.2,94.0,No events counted
+sml,state,HB,Bremen,Bremen,4004,706915,701199.0,2000000.0,0.0,0.0,0.0,0.0,,,566.4,173.0,No events counted
+sml,state,HH,Hamburg,Hamburg,11953,1869473,1469327.0,5500000.0,0.0,0.0,0.0,0.0,,,639.4,196.0,No events counted
+sml,state,HE,Hessen,Hessen,30285,6278594,1388938.0,0.0,1000000.0,238000.0,0.0,1238000.0,2446.3,124.0,482.4,148.0,Above average
+sml,state,MV,Mecklenburg-Vorpommern,Mecklenburg-Vorpommern,5225,1573685,474772.0,500000.0,0.0,0.0,75000.0,75000.0,6966.7,353.0,332.0,102.0,Above average
+sml,state,NI,Niedersachsen,Niedersachsen,20990,8000826,1823143.0,2850000.0,2300000.0,603000.0,125000.0,3028000.0,693.2,35.0,262.3,80.0,Thin on both
+sml,state,NW,Nordrhein-Westfalen,Nordrhein-Westfalen,53085,17986214,8033030.0,15400000.0,0.0,1491000.0,225000.0,1716000.0,3093.5,157.0,295.1,90.0,Thin per resident
+sml,state,RP,Rheinland-Pfalz,Rheinland-Pfalz,6979,4123022,1334738.0,0.0,0.0,0.0,90000.0,90000.0,7754.4,393.0,169.3,52.0,Thin per resident
+sml,state,SL,Saarland,Saarland,2592,1007342,401199.0,0.0,0.0,0.0,0.0,0.0,,,257.3,79.0,No events counted
+sml,state,SN,Sachsen,Sachsen,17030,4026599,1438553.0,0.0,0.0,296000.0,0.0,296000.0,5753.4,291.0,422.9,129.0,Above average
+sml,state,ST,Sachsen-Anhalt,Sachsen-Anhalt,6222,2120252,426428.0,500000.0,0.0,0.0,0.0,0.0,,,293.5,90.0,No events counted
+sml,state,SH,Schleswig-Holstein,Schleswig-Holstein,10636,2958519,241145.0,0.0,3500000.0,0.0,85000.0,3585000.0,296.7,15.0,359.5,110.0,Thin per event visit
+sml,state,TH,Thüringen,Thüringen,4782,2078946,0.0,500000.0,0.0,0.0,0.0,0.0,,,230.0,70.0,No events counted
+fvsm,state,BW,Baden-Württemberg,Baden-Württemberg,29209,11238761,3294413.0,5700000.0,0.0,510000.0,309000.0,9504413.0,307.3,98.0,259.9,79.0,Thin on both
+fvsm,state,BY,Bayern,Bayern,39266,13245503,3227938.0,16000000.0,0.0,1106000.0,80000.0,20333938.0,193.1,62.0,296.4,91.0,Thin on both
+fvsm,state,BE,Berlin,Berlin,22822,3700577,1194879.0,0.0,1100000.0,630000.0,60000.0,2924879.0,780.3,250.0,616.7,189.0,Above average
+fvsm,state,BB,Brandenburg,Brandenburg,7839,2551889,244302.0,0.0,0.0,0.0,0.0,244302.0,3208.7,1028.0,307.2,94.0,Thin per resident
+fvsm,state,HB,Bremen,Bremen,4004,706915,701199.0,2000000.0,0.0,0.0,0.0,2701199.0,148.2,47.0,566.4,173.0,Thin per event visit
+fvsm,state,HH,Hamburg,Hamburg,11953,1869473,1469327.0,5500000.0,0.0,0.0,0.0,6969327.0,171.5,55.0,639.4,196.0,Thin per event visit
+fvsm,state,HE,Hessen,Hessen,30285,6278594,1388938.0,0.0,1000000.0,238000.0,0.0,2626938.0,1152.9,369.0,482.4,148.0,Above average
+fvsm,state,MV,Mecklenburg-Vorpommern,Mecklenburg-Vorpommern,5225,1573685,474772.0,500000.0,0.0,0.0,75000.0,974772.0,536.0,172.0,332.0,102.0,Above average
+fvsm,state,NI,Niedersachsen,Niedersachsen,20990,8000826,1823143.0,2850000.0,2300000.0,603000.0,125000.0,7576143.0,277.1,89.0,262.3,80.0,Thin on both
+fvsm,state,NW,Nordrhein-Westfalen,Nordrhein-Westfalen,53085,17986214,8033030.0,15400000.0,0.0,1491000.0,225000.0,24924030.0,213.0,68.0,295.1,90.0,Thin on both
+fvsm,state,RP,Rheinland-Pfalz,Rheinland-Pfalz,6979,4123022,1334738.0,0.0,0.0,0.0,90000.0,1334738.0,522.9,167.0,169.3,52.0,Thin per resident
+fvsm,state,SL,Saarland,Saarland,2592,1007342,401199.0,0.0,0.0,0.0,0.0,401199.0,646.1,207.0,257.3,79.0,Thin per resident
+fvsm,state,SN,Sachsen,Sachsen,17030,4026599,1438553.0,0.0,0.0,296000.0,0.0,1734553.0,981.8,314.0,422.9,129.0,Above average
+fvsm,state,ST,Sachsen-Anhalt,Sachsen-Anhalt,6222,2120252,426428.0,500000.0,0.0,0.0,0.0,926428.0,671.6,215.0,293.5,90.0,Thin per resident
+fvsm,state,SH,Schleswig-Holstein,Schleswig-Holstein,10636,2958519,241145.0,0.0,3500000.0,0.0,85000.0,3741145.0,284.3,91.0,359.5,110.0,Thin per event visit
+fvsm,state,TH,Thüringen,Thüringen,4782,2078946,0.0,500000.0,0.0,0.0,0.0,500000.0,956.4,306.0,230.0,70.0,Thin per resident
+fvsl,state,BW,Baden-Württemberg,Baden-Württemberg,29209,11238761,3294413.0,5700000.0,0.0,510000.0,309000.0,9303413.0,314.0,96.0,259.9,79.0,Thin on both
+fvsl,state,BY,Bayern,Bayern,39266,13245503,3227938.0,16000000.0,0.0,1106000.0,80000.0,19307938.0,203.4,62.0,296.4,91.0,Thin on both
+fvsl,state,BE,Berlin,Berlin,22822,3700577,1194879.0,0.0,1100000.0,630000.0,60000.0,2354879.0,969.1,297.0,616.7,189.0,Above average
+fvsl,state,BB,Brandenburg,Brandenburg,7839,2551889,244302.0,0.0,0.0,0.0,0.0,244302.0,3208.7,983.0,307.2,94.0,Thin per resident
+fvsl,state,HB,Bremen,Bremen,4004,706915,701199.0,2000000.0,0.0,0.0,0.0,2701199.0,148.2,45.0,566.4,173.0,Thin per event visit
+fvsl,state,HH,Hamburg,Hamburg,11953,1869473,1469327.0,5500000.0,0.0,0.0,0.0,6969327.0,171.5,53.0,639.4,196.0,Thin per event visit
+fvsl,state,HE,Hessen,Hessen,30285,6278594,1388938.0,0.0,1000000.0,238000.0,0.0,2388938.0,1267.7,388.0,482.4,148.0,Above average
+fvsl,state,MV,Mecklenburg-Vorpommern,Mecklenburg-Vorpommern,5225,1573685,474772.0,500000.0,0.0,0.0,75000.0,1049772.0,497.7,152.0,332.0,102.0,Above average
+fvsl,state,NI,Niedersachsen,Niedersachsen,20990,8000826,1823143.0,2850000.0,2300000.0,603000.0,125000.0,7098143.0,295.7,91.0,262.3,80.0,Thin on both
+fvsl,state,NW,Nordrhein-Westfalen,Nordrhein-Westfalen,53085,17986214,8033030.0,15400000.0,0.0,1491000.0,225000.0,23658030.0,224.4,69.0,295.1,90.0,Thin on both
+fvsl,state,RP,Rheinland-Pfalz,Rheinland-Pfalz,6979,4123022,1334738.0,0.0,0.0,0.0,90000.0,1424738.0,489.8,150.0,169.3,52.0,Thin per resident
+fvsl,state,SL,Saarland,Saarland,2592,1007342,401199.0,0.0,0.0,0.0,0.0,401199.0,646.1,198.0,257.3,79.0,Thin per resident
+fvsl,state,SN,Sachsen,Sachsen,17030,4026599,1438553.0,0.0,0.0,296000.0,0.0,1438553.0,1183.8,363.0,422.9,129.0,Above average
+fvsl,state,ST,Sachsen-Anhalt,Sachsen-Anhalt,6222,2120252,426428.0,500000.0,0.0,0.0,0.0,926428.0,671.6,206.0,293.5,90.0,Thin per resident
+fvsl,state,SH,Schleswig-Holstein,Schleswig-Holstein,10636,2958519,241145.0,0.0,3500000.0,0.0,85000.0,3826145.0,278.0,85.0,359.5,110.0,Thin per event visit
+fvsl,state,TH,Thüringen,Thüringen,4782,2078946,0.0,500000.0,0.0,0.0,0.0,500000.0,956.4,293.0,230.0,70.0,Thin per resident
+fvml,state,BW,Baden-Württemberg,Baden-Württemberg,29209,11238761,3294413.0,5700000.0,0.0,510000.0,309000.0,9813413.0,297.6,88.0,259.9,79.0,Thin on both
+fvml,state,BY,Bayern,Bayern,39266,13245503,3227938.0,16000000.0,0.0,1106000.0,80000.0,20413938.0,192.3,57.0,296.4,91.0,Thin on both
+fvml,state,BE,Berlin,Berlin,22822,3700577,1194879.0,0.0,1100000.0,630000.0,60000.0,1884879.0,1210.8,357.0,616.7,189.0,Above average
+fvml,state,BB,Brandenburg,Brandenburg,7839,2551889,244302.0,0.0,0.0,0.0,0.0,244302.0,3208.7,947.0,307.2,94.0,Thin per resident
+fvml,state,HB,Bremen,Bremen,4004,706915,701199.0,2000000.0,0.0,0.0,0.0,2701199.0,148.2,44.0,566.4,173.0,Thin per event visit
+fvml,state,HH,Hamburg,Hamburg,11953,1869473,1469327.0,5500000.0,0.0,0.0,0.0,6969327.0,171.5,51.0,639.4,196.0,Thin per event visit
+fvml,state,HE,Hessen,Hessen,30285,6278594,1388938.0,0.0,1000000.0,238000.0,0.0,1626938.0,1861.5,550.0,482.4,148.0,Above average
+fvml,state,MV,Mecklenburg-Vorpommern,Mecklenburg-Vorpommern,5225,1573685,474772.0,500000.0,0.0,0.0,75000.0,1049772.0,497.7,147.0,332.0,102.0,Above average
+fvml,state,NI,Niedersachsen,Niedersachsen,20990,8000826,1823143.0,2850000.0,2300000.0,603000.0,125000.0,5401143.0,388.6,115.0,262.3,80.0,Thin per resident
+fvml,state,NW,Nordrhein-Westfalen,Nordrhein-Westfalen,53085,17986214,8033030.0,15400000.0,0.0,1491000.0,225000.0,25149030.0,211.1,62.0,295.1,90.0,Thin on both
+fvml,state,RP,Rheinland-Pfalz,Rheinland-Pfalz,6979,4123022,1334738.0,0.0,0.0,0.0,90000.0,1424738.0,489.8,145.0,169.3,52.0,Thin per resident
+fvml,state,SL,Saarland,Saarland,2592,1007342,401199.0,0.0,0.0,0.0,0.0,401199.0,646.1,191.0,257.3,79.0,Thin per resident
+fvml,state,SN,Sachsen,Sachsen,17030,4026599,1438553.0,0.0,0.0,296000.0,0.0,1734553.0,981.8,290.0,422.9,129.0,Above average
+fvml,state,ST,Sachsen-Anhalt,Sachsen-Anhalt,6222,2120252,426428.0,500000.0,0.0,0.0,0.0,926428.0,671.6,198.0,293.5,90.0,Thin per resident
+fvml,state,SH,Schleswig-Holstein,Schleswig-Holstein,10636,2958519,241145.0,0.0,3500000.0,0.0,85000.0,326145.0,3261.1,963.0,359.5,110.0,Above average
+fvml,state,TH,Thüringen,Thüringen,4782,2078946,0.0,500000.0,0.0,0.0,0.0,500000.0,956.4,282.0,230.0,70.0,Thin per resident
+fsml,state,BW,Baden-Württemberg,Baden-Württemberg,29209,11238761,3294413.0,5700000.0,0.0,510000.0,309000.0,4113413.0,710.1,103.0,259.9,79.0,Thin per resident
+fsml,state,BY,Bayern,Bayern,39266,13245503,3227938.0,16000000.0,0.0,1106000.0,80000.0,4413938.0,889.6,129.0,296.4,91.0,Thin per resident
+fsml,state,BE,Berlin,Berlin,22822,3700577,1194879.0,0.0,1100000.0,630000.0,60000.0,2984879.0,764.6,111.0,616.7,189.0,Above average
+fsml,state,BB,Brandenburg,Brandenburg,7839,2551889,244302.0,0.0,0.0,0.0,0.0,244302.0,3208.7,465.0,307.2,94.0,Thin per resident
+fsml,state,HB,Bremen,Bremen,4004,706915,701199.0,2000000.0,0.0,0.0,0.0,701199.0,571.0,83.0,566.4,173.0,Thin per event visit
+fsml,state,HH,Hamburg,Hamburg,11953,1869473,1469327.0,5500000.0,0.0,0.0,0.0,1469327.0,813.5,118.0,639.4,196.0,Above average
+fsml,state,HE,Hessen,Hessen,30285,6278594,1388938.0,0.0,1000000.0,238000.0,0.0,2626938.0,1152.9,167.0,482.4,148.0,Above average
+fsml,state,MV,Mecklenburg-Vorpommern,Mecklenburg-Vorpommern,5225,1573685,474772.0,500000.0,0.0,0.0,75000.0,549772.0,950.4,138.0,332.0,102.0,Above average
+fsml,state,NI,Niedersachsen,Niedersachsen,20990,8000826,1823143.0,2850000.0,2300000.0,603000.0,125000.0,4851143.0,432.7,63.0,262.3,80.0,Thin on both
+fsml,state,NW,Nordrhein-Westfalen,Nordrhein-Westfalen,53085,17986214,8033030.0,15400000.0,0.0,1491000.0,225000.0,9749030.0,544.5,79.0,295.1,90.0,Thin on both
+fsml,state,RP,Rheinland-Pfalz,Rheinland-Pfalz,6979,4123022,1334738.0,0.0,0.0,0.0,90000.0,1424738.0,489.8,71.0,169.3,52.0,Thin on both
+fsml,state,SL,Saarland,Saarland,2592,1007342,401199.0,0.0,0.0,0.0,0.0,401199.0,646.1,94.0,257.3,79.0,Thin on both
+fsml,state,SN,Sachsen,Sachsen,17030,4026599,1438553.0,0.0,0.0,296000.0,0.0,1734553.0,981.8,142.0,422.9,129.0,Above average
+fsml,state,ST,Sachsen-Anhalt,Sachsen-Anhalt,6222,2120252,426428.0,500000.0,0.0,0.0,0.0,426428.0,1459.1,211.0,293.5,90.0,Thin per resident
+fsml,state,SH,Schleswig-Holstein,Schleswig-Holstein,10636,2958519,241145.0,0.0,3500000.0,0.0,85000.0,3826145.0,278.0,40.0,359.5,110.0,Thin per event visit
+fsml,state,TH,Thüringen,Thüringen,4782,2078946,0.0,500000.0,0.0,0.0,0.0,0.0,,,230.0,70.0,No events counted
+vsml,state,BW,Baden-Württemberg,Baden-Württemberg,29209,11238761,3294413.0,5700000.0,0.0,510000.0,309000.0,6519000.0,448.1,103.0,259.9,79.0,Thin per resident
+vsml,state,BY,Bayern,Bayern,39266,13245503,3227938.0,16000000.0,0.0,1106000.0,80000.0,17186000.0,228.5,53.0,296.4,91.0,Thin on both
+vsml,state,BE,Berlin,Berlin,22822,3700577,1194879.0,0.0,1100000.0,630000.0,60000.0,1790000.0,1275.0,293.0,616.7,189.0,Above average
+vsml,state,BB,Brandenburg,Brandenburg,7839,2551889,244302.0,0.0,0.0,0.0,0.0,0.0,,,307.2,94.0,No events counted
+vsml,state,HB,Bremen,Bremen,4004,706915,701199.0,2000000.0,0.0,0.0,0.0,2000000.0,200.2,46.0,566.4,173.0,Thin per event visit
+vsml,state,HH,Hamburg,Hamburg,11953,1869473,1469327.0,5500000.0,0.0,0.0,0.0,5500000.0,217.3,50.0,639.4,196.0,Thin per event visit
+vsml,state,HE,Hessen,Hessen,30285,6278594,1388938.0,0.0,1000000.0,238000.0,0.0,1238000.0,2446.3,563.0,482.4,148.0,Above average
+vsml,state,MV,Mecklenburg-Vorpommern,Mecklenburg-Vorpommern,5225,1573685,474772.0,500000.0,0.0,0.0,75000.0,575000.0,908.7,209.0,332.0,102.0,Above average
+vsml,state,NI,Niedersachsen,Niedersachsen,20990,8000826,1823143.0,2850000.0,2300000.0,603000.0,125000.0,5878000.0,357.1,82.0,262.3,80.0,Thin on both
+vsml,state,NW,Nordrhein-Westfalen,Nordrhein-Westfalen,53085,17986214,8033030.0,15400000.0,0.0,1491000.0,225000.0,17116000.0,310.1,71.0,295.1,90.0,Thin on both
+vsml,state,RP,Rheinland-Pfalz,Rheinland-Pfalz,6979,4123022,1334738.0,0.0,0.0,0.0,90000.0,90000.0,7754.4,1784.0,169.3,52.0,Thin per resident
+vsml,state,SL,Saarland,Saarland,2592,1007342,401199.0,0.0,0.0,0.0,0.0,0.0,,,257.3,79.0,No events counted
+vsml,state,SN,Sachsen,Sachsen,17030,4026599,1438553.0,0.0,0.0,296000.0,0.0,296000.0,5753.4,1323.0,422.9,129.0,Above average
+vsml,state,ST,Sachsen-Anhalt,Sachsen-Anhalt,6222,2120252,426428.0,500000.0,0.0,0.0,0.0,500000.0,1244.4,286.0,293.5,90.0,Thin per resident
+vsml,state,SH,Schleswig-Holstein,Schleswig-Holstein,10636,2958519,241145.0,0.0,3500000.0,0.0,85000.0,3585000.0,296.7,68.0,359.5,110.0,Thin per event visit
+vsml,state,TH,Thüringen,Thüringen,4782,2078946,0.0,500000.0,0.0,0.0,0.0,500000.0,956.4,220.0,230.0,70.0,Thin per resident
+fvsml,state,BW,Baden-Württemberg,Baden-Württemberg,29209,11238761,3294413.0,5700000.0,0.0,510000.0,309000.0,9813413.0,297.6,96.0,259.9,79.0,Thin on both
+fvsml,state,BY,Bayern,Bayern,39266,13245503,3227938.0,16000000.0,0.0,1106000.0,80000.0,20413938.0,192.3,62.0,296.4,91.0,Thin on both
+fvsml,state,BE,Berlin,Berlin,22822,3700577,1194879.0,0.0,1100000.0,630000.0,60000.0,2984879.0,764.6,248.0,616.7,189.0,Above average
+fvsml,state,BB,Brandenburg,Brandenburg,7839,2551889,244302.0,0.0,0.0,0.0,0.0,244302.0,3208.7,1040.0,307.2,94.0,Thin per resident
+fvsml,state,HB,Bremen,Bremen,4004,706915,701199.0,2000000.0,0.0,0.0,0.0,2701199.0,148.2,48.0,566.4,173.0,Thin per event visit
+fvsml,state,HH,Hamburg,Hamburg,11953,1869473,1469327.0,5500000.0,0.0,0.0,0.0,6969327.0,171.5,56.0,639.4,196.0,Thin per event visit
+fvsml,state,HE,Hessen,Hessen,30285,6278594,1388938.0,0.0,1000000.0,238000.0,0.0,2626938.0,1152.9,374.0,482.4,148.0,Above average
+fvsml,state,MV,Mecklenburg-Vorpommern,Mecklenburg-Vorpommern,5225,1573685,474772.0,500000.0,0.0,0.0,75000.0,1049772.0,497.7,161.0,332.0,102.0,Above average
+fvsml,state,NI,Niedersachsen,Niedersachsen,20990,8000826,1823143.0,2850000.0,2300000.0,603000.0,125000.0,7701143.0,272.6,88.0,262.3,80.0,Thin on both
+fvsml,state,NW,Nordrhein-Westfalen,Nordrhein-Westfalen,53085,17986214,8033030.0,15400000.0,0.0,1491000.0,225000.0,25149030.0,211.1,68.0,295.1,90.0,Thin on both
+fvsml,state,RP,Rheinland-Pfalz,Rheinland-Pfalz,6979,4123022,1334738.0,0.0,0.0,0.0,90000.0,1424738.0,489.8,159.0,169.3,52.0,Thin per resident
+fvsml,state,SL,Saarland,Saarland,2592,1007342,401199.0,0.0,0.0,0.0,0.0,401199.0,646.1,209.0,257.3,79.0,Thin per resident
+fvsml,state,SN,Sachsen,Sachsen,17030,4026599,1438553.0,0.0,0.0,296000.0,0.0,1734553.0,981.8,318.0,422.9,129.0,Above average
+fvsml,state,ST,Sachsen-Anhalt,Sachsen-Anhalt,6222,2120252,426428.0,500000.0,0.0,0.0,0.0,926428.0,671.6,218.0,293.5,90.0,Thin per resident
+fvsml,state,SH,Schleswig-Holstein,Schleswig-Holstein,10636,2958519,241145.0,0.0,3500000.0,0.0,85000.0,3826145.0,278.0,90.0,359.5,110.0,Thin per event visit
+fvsml,state,TH,Thüringen,Thüringen,4782,2078946,0.0,500000.0,0.0,0.0,0.0,500000.0,956.4,310.0,230.0,70.0,Thin per resident

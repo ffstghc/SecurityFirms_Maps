@@ -1,0 +1,784 @@
+<style>
+.sm-wrap{font-family:var(--font-anthropic-sans);display:flex;flex-direction:column;gap:var(--cds-gap-lg);color:var(--color-fg);container-type:inline-size}
+.sm-tabs{display:flex;gap:var(--cds-gap-xs);border-bottom:1px solid var(--color-border-line)}
+.sm-tab{font:inherit;font-size:var(--cds-font-size-body);color:var(--color-fg-muted);background:none;border:none;border-bottom:2px solid transparent;padding:var(--cds-pad-xs) var(--cds-pad-sm);cursor:pointer;margin-bottom:-1px}
+.sm-tab[aria-selected="true"]{color:var(--color-fg);border-bottom-color:var(--color-fg);font-weight:var(--cds-font-weight-medium)}
+.sm-page{display:flex;flex-direction:column;gap:var(--cds-gap-lg)}
+.sm-page[hidden]{display:none}
+.sm-head h1{font-family:var(--font-anthropic-serif);font-weight:400;font-size:var(--cds-font-size-title);margin:0;line-height:1.2}
+.sm-take{color:var(--color-fg-muted);font-size:var(--cds-font-size-body);margin:var(--cds-gap-xs) 0 0;max-width:75ch;line-height:1.5}
+.sm-take b{color:var(--color-fg);font-weight:var(--cds-font-weight-medium)}
+.sm-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,11rem),1fr));gap:var(--cds-gap-md)}
+.sm-kpi{background:var(--color-panel);border:1px solid var(--color-border-line);border-radius:var(--cds-radius);padding:var(--cds-pad-lg);display:flex;flex-direction:column;gap:var(--cds-gap-xs)}
+.sm-kpi .sm-v{font-family:var(--font-anthropic-serif);font-weight:400;font-size:var(--cds-font-size-title);font-variant-numeric:tabular-nums;min-height:1.3em}
+.sm-kpi .sm-l{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);line-height:1.4}
+.sm-controls{display:flex;flex-direction:column;gap:var(--cds-gap-sm)}
+.sm-row{display:flex;flex-wrap:wrap;gap:var(--cds-gap-xs);align-items:center}
+.sm-row .sm-lab{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);min-width:7.5rem}
+.sm-btn{font:inherit;font-size:var(--cds-font-size-caption);color:var(--color-fg);background:var(--color-bg);border:1px solid var(--color-border-line);border-radius:var(--cds-radius);padding:var(--cds-pad-xs) var(--cds-pad-sm);cursor:pointer;display:inline-flex;align-items:center;gap:var(--cds-gap-xs)}
+.sm-btn[aria-pressed="true"]{background:var(--color-panel);border-color:var(--color-fg-muted);font-weight:var(--cds-font-weight-medium)}
+.sm-btn[aria-pressed="false"] .sm-sw{opacity:.25}
+.sm-sw{width:.7rem;height:.7rem;border-radius:50%;display:inline-block;flex:none}
+.sm-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,28rem),1fr));gap:var(--cds-gap-md);align-items:start}
+.sm-card{background:var(--color-panel);border:1px solid var(--color-border-line);border-radius:var(--cds-radius);padding:var(--cds-pad-lg);min-width:0}
+.sm-card h2{font-size:var(--cds-font-size-heading);font-weight:var(--cds-font-weight-medium);margin:0}
+.sm-note{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);margin:var(--cds-gap-xs) 0 var(--cds-gap-md);line-height:1.45}
+.sm-map{position:relative;min-height:28rem}
+.sm-map svg{display:block}
+.sm-unit{stroke:var(--color-bg);stroke-width:1;cursor:pointer}
+.sm-unit.sm-thin{stroke-width:.5}
+.sm-unit.sm-hi{stroke:var(--color-fg);stroke-width:2}
+.sm-code{font-size:var(--cds-font-size-caption);fill:var(--color-fg);paint-order:stroke;stroke:var(--color-panel);stroke-width:3px;stroke-linejoin:round;pointer-events:none;font-weight:var(--cds-font-weight-medium)}
+.sm-bub{stroke:var(--color-bg);stroke-width:1;fill-opacity:.72;cursor:pointer}
+.sm-bub:hover{fill-opacity:1;stroke:var(--color-fg)}
+.sm-tip{position:absolute;pointer-events:none;background:var(--cds-surface-popover);border:1px solid var(--cds-border);border-radius:var(--cds-radius);box-shadow:var(--cds-shadow-popover);padding:var(--cds-pad-xs) var(--cds-pad-sm);font-size:var(--cds-font-size-caption);line-height:1.5;max-width:17rem;z-index:2;font-variant-numeric:tabular-nums}
+.sm-tip .sm-t1{color:var(--cds-text-secondary)}
+.sm-tip .sm-t2{font-weight:var(--cds-font-weight-medium)}
+.sm-tip .sm-kv{display:flex;justify-content:space-between;gap:var(--cds-gap-md)}
+.sm-legend{display:flex;flex-wrap:wrap;gap:var(--cds-gap-md);align-items:center;font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);margin-top:var(--cds-gap-sm)}
+.sm-legend svg{overflow:visible}
+.sm-legend text{fill:var(--color-fg-muted);font-size:var(--cds-font-size-caption)}
+.sm-scroll{max-height:36rem;overflow:auto}
+.sm-tbl{width:100%;border-collapse:collapse;font-size:var(--cds-font-size-caption);font-variant-numeric:tabular-nums}
+.sm-tbl th{position:sticky;top:0;background:var(--color-panel);text-align:right;font-weight:var(--cds-font-weight-medium);color:var(--color-fg-muted);padding:var(--cds-pad-xs) var(--cds-pad-sm);border-bottom:1px solid var(--color-border-line);white-space:nowrap}
+.sm-tbl th button{all:unset;cursor:pointer}
+.sm-tbl th:first-child,.sm-tbl td:first-child{text-align:left}
+.sm-tbl td{text-align:right;padding:var(--cds-pad-xs) var(--cds-pad-sm);border-bottom:1px solid var(--color-border-line);white-space:nowrap}
+.sm-tbl td.sm-left,.sm-tbl th.sm-left{text-align:left}
+.sm-tbl tr.sm-hi td{background:var(--color-bg)}
+.sm-idx{display:inline-flex;align-items:center;gap:var(--cds-gap-xs);justify-content:flex-end}
+.sm-bar{display:inline-block;height:.45rem;border-radius:.25rem}
+.sm-seg{display:inline-flex;align-items:center;gap:var(--cds-gap-xs)}
+.sm-search{font:inherit;font-size:var(--cds-font-size-caption);color:var(--color-fg);background:var(--color-bg);border:1px solid var(--color-border-line);border-radius:var(--cds-radius);padding:var(--cds-pad-xs) var(--cds-pad-sm);margin-bottom:var(--cds-gap-sm);width:min(100%,18rem)}
+.sm-method{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);line-height:1.55}
+.sm-method h3{font-size:var(--cds-font-size-body);font-weight:var(--cds-font-weight-medium);color:var(--color-fg);margin:var(--cds-gap-md) 0 var(--cds-gap-xs)}
+.sm-method ul{margin:0;padding-left:1.1rem}
+.sm-method p{margin:0 0 var(--cds-gap-xs)}
+.sm-fail{display:flex;align-items:center;justify-content:center;gap:var(--cds-gap-xs);min-height:inherit;color:var(--color-fg-muted);font-size:var(--cds-font-size-caption)}
+.sm-fail i{width:.375rem;height:.375rem;border-radius:50%;background:var(--color-bad);display:inline-block}
+[data-dash-source-state=empty]{color:transparent}
+[data-dash-source-state=refreshing]{opacity:.5;transition:opacity var(--cds-dur-slow)}
+@container (max-width: 40rem){.sm-hide-narrow{display:none}}
+</style>
+
+<div class="sm-wrap">
+  <nav class="sm-tabs" role="tablist" aria-label="Pages">
+    <button class="sm-tab" role="tab" data-page="germany" id="tab-germany">Germany by state</button>
+    <button class="sm-tab" role="tab" data-page="bavaria" id="tab-bavaria">Bavaria by district</button>
+  </nav>
+
+  <!-- ===================== GERMANY ===================== -->
+  <section class="sm-page" id="germany" data-page="germany">
+    <header class="sm-head">
+      <h1>Private security supply vs. event demand in Germany</h1>
+      <p class="sm-take" id="de-takeaway"><span class="dash-skeleton">—</span></p>
+    </header>
+    <section class="sm-kpis" id="de-kpis">
+      <div class="sm-kpi"><span class="sm-v dash-skeleton" id="de-kpi-workers" data-source="national" data-field="workers">—</span><span class="sm-l">Security workers, private guarding firms (WZ 80.1), incl. minijobs · 31 Mar 2026</span></div>
+      <div class="sm-kpi"><span class="sm-v dash-skeleton" id="de-kpi-visits" data-source="national" data-field="visits">—</span><span class="sm-l">Event visits per year counted (selected event types)</span></div>
+      <div class="sm-kpi"><span class="sm-v dash-skeleton" id="de-kpi-ratio" data-source="national" data-field="per100k_visits">—</span><span class="sm-l">Security workers per 100,000 event visits — Germany</span></div>
+      <div class="sm-kpi"><span class="sm-v dash-skeleton" id="de-kpi-both" data-source="national" data-field="thin_both">—</span><span class="sm-l">States below the German average on both lenses (per event visit and per resident)</span></div>
+    </section>
+    <section class="sm-controls" id="de-controls" aria-label="Germany map controls">
+      <div class="sm-row" role="group" aria-label="Map colour" id="de-metrics">
+        <span class="sm-lab">Colour states by</span>
+        <button class="sm-btn sm-metric" data-metric="ratio">Workers per 100k event visits</button>
+        <button class="sm-btn sm-metric" data-metric="resid">Workers per 100k residents</button>
+        <button class="sm-btn sm-metric" data-metric="segment">Priority segments</button>
+        <button class="sm-btn sm-metric" data-metric="demand">Event visits (demand)</button>
+      </div>
+      <div class="sm-row" role="group" aria-label="Event types counted as demand" id="de-chips"><span class="sm-lab">Count as demand</span></div>
+      <div class="sm-row"><span class="sm-lab">Map layers</span><button class="sm-btn" id="de-bubbles">Event hotspots</button></div>
+    </section>
+    <section class="sm-grid">
+      <div class="sm-card" id="de-map-card">
+        <h2 id="de-map-title">Map</h2>
+        <p class="sm-note" id="de-map-note">—</p>
+        <div class="sm-map dash-skeleton" id="de-map" data-source="state_metrics events state_shapes"></div>
+        <div class="sm-legend" id="de-legend"></div>
+      </div>
+      <div class="sm-card" id="de-ranking-card">
+        <h2>States ranked: fewest security workers per event visit first</h2>
+        <p class="sm-note">Index 100 = German average for the selected event types. Segment combines both lenses. Hover a row to find it on the map; click a header to sort.</p>
+        <div class="sm-scroll">
+          <table class="sm-tbl" id="de-rank" data-source="state_metrics" data-row-key="combo,level,id">
+            <thead><tr>
+              <th data-field="name" data-k="name" class="sm-left"><button>State</button></th>
+              <th data-field="workers" data-k="workers"><button>Workers</button></th>
+              <th data-field="visits" data-k="visits"><button>Event visits</button></th>
+              <th data-field="per100k_visits" data-k="per100k_visits"><button>Per 100k visits</button></th>
+              <th data-field="index" data-k="index"><button>Index</button></th>
+              <th data-field="per100k_residents" data-k="per100k_residents" class="sm-hide-narrow"><button>Per 100k residents</button></th>
+              <th data-field="segment" data-k="segment" class="sm-left sm-hide-narrow"><button>Segment</button></th>
+            </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section class="sm-card" id="de-events-card">
+      <h2>Demand hotspots</h2>
+      <p class="sm-note">Every event counted as demand, largest first (only the event types switched on above). Football = average home attendance × home games, season 2025/26.</p>
+      <input class="sm-search" id="de-search" type="search" placeholder="Search events, cities, states" aria-label="Search events">
+      <div class="sm-scroll">
+        <table class="sm-tbl" id="de-events" data-source="events" data-row-key="event,city">
+          <thead><tr>
+            <th data-field="event" class="sm-left">Event</th>
+            <th data-field="city" class="sm-left">City</th>
+            <th data-field="code" class="sm-left">State</th>
+            <th data-field="category" class="sm-left sm-hide-narrow">Type</th>
+            <th data-field="visits">Visits / year</th>
+            <th data-field="basis" class="sm-left sm-hide-narrow">Basis</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+    <section class="sm-card sm-method" id="de-method">
+      <h2>How to read this</h2>
+      <h3>Supply</h3>
+      <p>People working in private guarding and security firms (WZ 2008 class 80.1, "Private Wach- und Sicherheitsdienste"), counted at their place of work: employees subject to social insurance plus marginal (minijob) employees, from the Federal Employment Agency, reference date 31 March 2026. It is total headcount, not event-security staff only: most of it is object protection, aviation security (strong in Hessen because of Frankfurt airport) and public-sector contracts (strong in Berlin), so a high value does not mean spare event capacity.</p>
+      <h3>Demand</h3>
+      <p>Annual visits to large, recurring crowd events with published figures, assigned to the state where they take place: professional football (1st–3rd league, season 2025/26), the 30 biggest Volksfeste listed by the German showmen's association (DSB, 2023), city festivals reported above one million visits, the largest trade and consumer fairs of 2025 and the ten biggest music festivals. Christmas markets, arena concerts, carnival parades, demonstrations and most smaller events are not included because no consistent per-state figures exist; states whose demand sits mostly in such events (for example Berlin, Saxony, Thuringia) are understated.</p>
+      <h3>Metrics</h3>
+      <ul>
+        <li><b>Workers per 100k event visits</b>: security workers in the state ÷ counted event visits × 100,000. Low = thin supply relative to event demand.</li>
+        <li><b>Index</b>: the state's value relative to Germany (100). Below 100 = less supply per visit than average.</li>
+        <li><b>Workers per 100k residents</b>: a demand-free check of how dense the security labour pool is.</li>
+        <li><b>Priority segments</b>: "Thin on both" = below average per event visit and per resident — the clearest gap; "Thin per event visit" = many events but an average-or-better labour pool; "Thin per resident" = small labour pool but few counted events.</li>
+      </ul>
+      <p>Workers cross state lines for big events and firms deploy staff nationally, so read the map as a relative indicator of where local supply is stretched, not as a staffing count.</p>
+    </section>
+  </section>
+
+  <!-- ===================== BAVARIA ===================== -->
+  <section class="sm-page" id="bavaria" data-page="bavaria" hidden>
+    <header class="sm-head">
+      <h1>Bavaria: security workforce vs. event demand by district</h1>
+      <p class="sm-take" id="by-takeaway"><span class="dash-skeleton">—</span></p>
+    </header>
+    <section class="sm-kpis" id="by-kpis">
+      <div class="sm-kpi"><span class="sm-v dash-skeleton" id="by-kpi-workers" data-source="by_total" data-field="workers">—</span><span class="sm-l">People working in security occupations (KldB 53) in Bavaria, incl. minijobs · 31 Mar 2026</span></div>
+      <div class="sm-kpi"><span class="sm-v dash-skeleton" id="by-kpi-visits" data-source="by_total" data-field="visits">—</span><span class="sm-l">Event visits per year counted in Bavaria (selected event types)</span></div>
+      <div class="sm-kpi"><span class="sm-v dash-skeleton" id="by-kpi-ratio" data-source="by_total" data-field="per100k_visits">—</span><span class="sm-l">Security workers per 100,000 event visits — Bavaria</span></div>
+      <div class="sm-kpi"><span class="sm-v dash-skeleton" id="by-kpi-both" data-source="by_total" data-field="thin_both">—</span><span class="sm-l" id="by-kpi-both-label">Areas below the Bavarian average on both lenses</span></div>
+    </section>
+    <section class="sm-controls" id="by-controls" aria-label="Bavaria map controls">
+      <div class="sm-row" role="group" aria-label="Map level" id="by-levels">
+        <span class="sm-lab">Show</span>
+        <button class="sm-btn sm-level" data-level="district">96 districts</button>
+        <button class="sm-btn sm-level" data-level="region">7 Regierungsbezirke</button>
+      </div>
+      <div class="sm-row" role="group" aria-label="Map colour" id="by-metrics">
+        <span class="sm-lab">Colour by</span>
+        <button class="sm-btn sm-metric" data-metric="ratio">Workers per 100k event visits</button>
+        <button class="sm-btn sm-metric" data-metric="resid">Workers per 100k residents</button>
+        <button class="sm-btn sm-metric" data-metric="segment">Priority segments</button>
+        <button class="sm-btn sm-metric" data-metric="demand">Event visits (demand)</button>
+      </div>
+      <div class="sm-row" role="group" aria-label="Event types counted as demand" id="by-chips"><span class="sm-lab">Count as demand</span></div>
+      <div class="sm-row"><span class="sm-lab">Map layers</span><button class="sm-btn" id="by-bubbles">Event hotspots</button></div>
+    </section>
+    <section class="sm-grid">
+      <div class="sm-card" id="by-map-card">
+        <h2 id="by-map-title">Map</h2>
+        <p class="sm-note" id="by-map-note">—</p>
+        <div class="sm-map dash-skeleton" id="by-map" data-source="by_metrics by_events by_shapes"></div>
+        <div class="sm-legend" id="by-legend"></div>
+      </div>
+      <div class="sm-card" id="by-ranking-card">
+        <h2 id="by-rank-title">Ranked: fewest security workers per event visit first</h2>
+        <p class="sm-note">Index 100 = Bavarian average for the selected event types. Districts without a counted event have no per-visit value and are listed last. Hover a row to find it on the map; click a header to sort.</p>
+        <div class="sm-scroll">
+          <table class="sm-tbl" id="by-rank" data-source="by_metrics" data-row-key="combo,level,id">
+            <thead><tr>
+              <th data-field="name" data-k="name" class="sm-left"><button>Area</button></th>
+              <th data-field="workers" data-k="workers"><button>Workers</button></th>
+              <th data-field="visits" data-k="visits"><button>Event visits</button></th>
+              <th data-field="per100k_visits" data-k="per100k_visits"><button>Per 100k visits</button></th>
+              <th data-field="index" data-k="index"><button>Index</button></th>
+              <th data-field="per100k_residents" data-k="per100k_residents" class="sm-hide-narrow"><button>Per 100k residents</button></th>
+              <th data-field="segment" data-k="segment" class="sm-left sm-hide-narrow"><button>Segment</button></th>
+            </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section class="sm-card" id="by-events-card">
+      <h2>Bavarian demand hotspots</h2>
+      <p class="sm-note">Every Bavarian event counted as demand, largest first (only the event types switched on above).</p>
+      <input class="sm-search" id="by-search" type="search" placeholder="Search events or cities" aria-label="Search Bavarian events">
+      <div class="sm-scroll">
+        <table class="sm-tbl" id="by-events" data-source="by_events" data-row-key="event,city">
+          <thead><tr>
+            <th data-field="event" class="sm-left">Event</th>
+            <th data-field="city" class="sm-left">City</th>
+            <th data-field="category" class="sm-left sm-hide-narrow">Type</th>
+            <th data-field="visits">Visits / year</th>
+            <th data-field="basis" class="sm-left sm-hide-narrow">Basis</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+    <section class="sm-card sm-method" id="by-method">
+      <h2>How to read the Bavaria view</h2>
+      <h3>Supply</h3>
+      <p>At district level the Federal Employment Agency does not publish industry class 80.1, so this page counts people working in security occupations (KldB 2010 main group 53 "Schutz-, Sicherheits-, Überwachungsberufe") at their place of work, insured employees plus minijobs, 31 March 2026. That is broader than the Germany page: it also includes in-house security, plant fire brigades and airport screeners, which is why Freising and Erding (Munich airport) stand out. Police officers are civil servants and are not included.</p>
+      <h3>Demand</h3>
+      <p>Bavarian events with published visitor figures: football leagues 1–3 and ice-hockey DEL (season 2025/26, home attendance), the Bavarian Volksfeste from the DSB list plus further large Volksfeste reported by BAYERN TOURISMUS and press, the Christmas markets in Munich and Nuremberg, the largest fairs of 2025 and the biggest music festivals. Basketball, arena concerts and smaller local fairs are not included. Most districts host none of these events, so their per-visit value is empty; switch to the 7 Regierungsbezirke to compare regions where staff can be drawn from neighbouring districts.</p>
+      <h3>Reading it</h3>
+      <p>Index 100 = Bavarian average for the selected event types. Low values mean few security workers in the area relative to the event visits it hosts. Big event cities draw staff from the surrounding districts, so pair the district view with the regional view.</p>
+    </section>
+  </section>
+</div>
+
+<script>
+const SEG_ORDER = ['Thin on both', 'Thin per event visit', 'Thin per resident', 'Above average', 'No events counted'];
+window.SM_SEG = (ratio, ratioAvg, resid, residAvg) => {
+  if (ratio === null) return 'No events counted';
+  const v = ratio < ratioAvg, r = resid < residAvg;
+  return v && r ? 'Thin on both' : v ? 'Thin per event visit' : r ? 'Thin per resident' : 'Above average';
+};
+
+dash.calc('state_metrics', {
+  inputs: ['security_staff', 'population', 'events'],
+  title: 'State supply vs event demand',
+  description: 'Per state and for every mix of event types: security workers (insured + minijob, WZ 80.1) per 100,000 event visits and per 100,000 residents, each also as an index with Germany = 100.',
+  fn: (security_staff, population, events) => {
+    const cats = ['football', 'volksfest', 'stadtfest', 'fair', 'festival'];
+    const letters = ['f', 'v', 's', 'm', 'l'];
+    const pop = {};
+    population.forEach((r) => { pop[r.code] = Number(r.population); });
+    const base = security_staff.map((s) => {
+      const by = {};
+      cats.forEach((c) => { by[c] = 0; });
+      events.forEach((e) => { if (e.code === s.code) by[e.category] += Number(e.visits); });
+      return {id: s.code, name: s.state, workers: Number(s.svb_801) + Number(s.gb_801), residents: pop[s.code], by};
+    });
+    const out = [];
+    for (let mask = 1; mask < 32; mask++) {
+      const on = cats.filter((c, i) => mask & (1 << i));
+      const combo = letters.filter((l, i) => mask & (1 << i)).join('');
+      const rows = base.map((b) => ({...b, visits: on.reduce((t, c) => t + b.by[c], 0)}));
+      const W = rows.reduce((t, r) => t + r.workers, 0);
+      const ratioAvg = W / rows.reduce((t, r) => t + r.visits, 0);
+      const residAvg = W / rows.reduce((t, r) => t + r.residents, 0);
+      rows.forEach((r) => {
+        const ratio = r.visits ? r.workers / r.visits : null;
+        const resid = r.workers / r.residents;
+        out.push({combo, level: 'state', id: r.id, name: r.name, region: r.name, workers: r.workers, residents: r.residents, visits: r.visits,
+          football: r.by.football, volksfest: r.by.volksfest, stadtfest: r.by.stadtfest, fair: r.by.fair, festival: r.by.festival,
+          per100k_visits: ratio === null ? null : Math.round(ratio * 1e6) / 10,
+          index: ratio === null ? null : Math.round(ratio / ratioAvg * 100),
+          per100k_residents: Math.round(resid * 1e6) / 10,
+          resid_index: Math.round(resid / residAvg * 100),
+          segment: ratio === null ? 'No events counted' : (ratio < ratioAvg && resid < residAvg) ? 'Thin on both' : ratio < ratioAvg ? 'Thin per event visit' : resid < residAvg ? 'Thin per resident' : 'Above average'});
+      });
+    }
+    return out;
+  },
+});
+
+dash.calc('national', {
+  inputs: ['state_metrics'],
+  title: 'Germany totals',
+  description: 'Germany-wide sums per mix of event types, the national ratio, and how many states are thin on both lenses.',
+  fn: (state_metrics) => {
+    const by = {};
+    state_metrics.forEach((r) => {
+      const n = by[r.combo] || (by[r.combo] = {combo: r.combo, level: r.level, workers: 0, visits: 0, residents: 0, thin_both: 0});
+      n.workers += r.workers; n.visits += r.visits; n.residents += r.residents;
+      if (r.segment === 'Thin on both') n.thin_both += 1;
+    });
+    return Object.values(by).map((n) => ({...n,
+      per100k_visits: Math.round(n.workers / n.visits * 1e6) / 10,
+      per100k_residents: Math.round(n.workers / n.residents * 1e6) / 10}));
+  },
+});
+
+dash.calc('by_metrics', {
+  inputs: ['by_districts', 'by_events'],
+  title: 'Bavarian districts and regions: supply vs demand',
+  description: 'Per district and per Regierungsbezirk, for every mix of event types: people in security occupations (KldB 53, insured + minijob) per 100,000 event visits and per 100,000 residents, each also as an index with Bavaria = 100.',
+  fn: (by_districts, by_events) => {
+    const cats = ['football', 'icehockey', 'volksfest', 'xmas', 'fair', 'festival'];
+    const letters = ['f', 'h', 'v', 'x', 'm', 'l'];
+    const units = by_districts.map((d) => {
+      const by = {};
+      cats.forEach((c) => { by[c] = 0; });
+      by_events.forEach((e) => { if (e.ags === d.ags) by[e.category] += Number(e.visits); });
+      return {level: 'district', id: d.ags, name: d.district, region: d.region, workers: Number(d.workers_svb) + Number(d.workers_gb), residents: Number(d.population), by};
+    });
+    const regions = {};
+    units.forEach((u) => {
+      const r = regions[u.region] || (regions[u.region] = {level: 'region', id: u.region, name: u.region, region: u.region, workers: 0, residents: 0, by: {}});
+      r.workers += u.workers; r.residents += u.residents;
+      cats.forEach((c) => { r.by[c] = (r.by[c] || 0) + u.by[c]; });
+    });
+    const all = units.concat(Object.values(regions));
+    const W = units.reduce((t, u) => t + u.workers, 0), P = units.reduce((t, u) => t + u.residents, 0);
+    const out = [];
+    for (let mask = 1; mask < 64; mask++) {
+      const on = cats.filter((c, i) => mask & (1 << i));
+      const combo = letters.filter((l, i) => mask & (1 << i)).join('');
+      const vis = (u) => on.reduce((t, c) => t + u.by[c], 0);
+      const ratioAvg = W / units.reduce((t, u) => t + vis(u), 0);
+      const residAvg = W / P;
+      all.forEach((u) => {
+        const visits = vis(u);
+        const ratio = visits ? u.workers / visits : null;
+        const resid = u.workers / u.residents;
+        out.push({combo, level: u.level, id: u.id, name: u.name, region: u.region, workers: u.workers, residents: u.residents, visits,
+          football: u.by.football, icehockey: u.by.icehockey, volksfest: u.by.volksfest, xmas: u.by.xmas, fair: u.by.fair, festival: u.by.festival,
+          per100k_visits: ratio === null ? null : Math.round(ratio * 1e6) / 10,
+          index: ratio === null ? null : Math.round(ratio / ratioAvg * 100),
+          per100k_residents: Math.round(resid * 1e6) / 10,
+          resid_index: Math.round(resid / residAvg * 100),
+          segment: ratio === null ? 'No events counted' : (ratio < ratioAvg && resid < residAvg) ? 'Thin on both' : ratio < ratioAvg ? 'Thin per event visit' : resid < residAvg ? 'Thin per resident' : 'Above average'});
+      });
+    }
+    return out;
+  },
+});
+
+dash.calc('by_total', {
+  inputs: ['by_metrics'],
+  title: 'Bavaria totals',
+  description: 'Bavaria-wide sums per mix of event types and map level, the Bavarian ratio, and how many areas are thin on both lenses.',
+  fn: (by_metrics) => {
+    const by = {};
+    by_metrics.forEach((r) => {
+      const k = r.combo + '|' + r.level;
+      const n = by[k] || (by[k] = {combo: r.combo, level: r.level, workers: 0, visits: 0, residents: 0, thin_both: 0});
+      n.workers += r.workers; n.visits += r.visits; n.residents += r.residents;
+      if (r.segment === 'Thin on both') n.thin_both += 1;
+    });
+    return Object.values(by).map((n) => ({...n,
+      per100k_visits: Math.round(n.workers / n.visits * 1e6) / 10,
+      per100k_residents: Math.round(n.workers / n.residents * 1e6) / 10}));
+  },
+});
+</script>
+
+<script>
+(() => {
+  const fmt = d3.format(',');
+  const fmt1 = d3.format(',.1f');
+  const compact = (v) => new Intl.NumberFormat('en', {notation: 'compact', maximumFractionDigits: 1}).format(v);
+  const wrap = document.querySelector('.sm-wrap');
+  const probe = document.createElement('span');
+  probe.style.display = 'none';
+  wrap.appendChild(probe);
+  const resolve = (c) => { probe.style.color = ''; probe.style.color = c; return getComputedStyle(probe).color; };
+  const tok = (name) => resolve(`var(${name})`);
+  const enc = encodeURIComponent;
+
+  const SEGMENTS = [
+    {name: 'Thin on both', color: () => tok('--cds-chart-status-critical')},
+    {name: 'Thin per event visit', color: () => tok('--color-warn')},
+    {name: 'Thin per resident', color: () => resolve(dash.colors[1])},
+    {name: 'Above average', color: () => tok('--cds-chart-muted')},
+    {name: 'No events counted', color: () => tok('--color-border-line')},
+  ];
+  const segColor = (name) => (SEGMENTS.find((s) => s.name === name) || SEGMENTS[3]).color();
+
+  const PAGES = {
+    germany: {
+      p: 'de', metrics: 'state_metrics', total: 'national', events: 'events', shapes: 'state_shapes',
+      areaWord: 'Germany', unitPlural: 'states',
+      cats: [
+        {id: 'football', letter: 'f', label: 'Pro football (leagues 1–3)', color: 2},
+        {id: 'volksfest', letter: 'v', label: 'Volksfeste', color: 3},
+        {id: 'stadtfest', letter: 's', label: 'City festivals', color: 4},
+        {id: 'fair', letter: 'm', label: 'Trade & consumer fairs', color: 5},
+        {id: 'festival', letter: 'l', label: 'Music festivals', color: 6},
+      ],
+      defaults: {combo: 'fvsml', metric: 'ratio', bubbles: true, level: 'state'},
+      paramKeys: {combo: 'combo', metric: 'metric', bubbles: 'bubbles'},
+      levels: null,
+      shapeLevel: () => 'state',
+      shapeId: (r) => r.code,
+      eventUnit: (e) => e.code,
+      eventPlace: (e, names) => `${e.city}, ${names[e.code] || e.code}`,
+      labels: (u) => u.id,
+      nudge: {BB: [0.55, -0.55], HB: [0, 0.12], HH: [0.1, 0.1]},
+      eventCells: (e) => [[e.event, 'sm-left'], [e.city, 'sm-left'], [e.code, 'sm-left'], [e.category, 'sm-left sm-hide-narrow'], [fmt(e.visits), ''], [e.basis, 'sm-left sm-hide-narrow']],
+      unitWord: {state: 'states'},
+    },
+    bavaria: {
+      p: 'by', metrics: 'by_metrics', total: 'by_total', events: 'by_events', shapes: 'by_shapes',
+      areaWord: 'Bavaria', unitPlural: 'districts',
+      cats: [
+        {id: 'football', letter: 'f', label: 'Football (leagues 1–3)', color: 2},
+        {id: 'icehockey', letter: 'h', label: 'Ice hockey (DEL)', color: 7},
+        {id: 'volksfest', letter: 'v', label: 'Volksfeste', color: 3},
+        {id: 'xmas', letter: 'x', label: 'Christmas markets', color: 4},
+        {id: 'fair', letter: 'm', label: 'Trade fairs', color: 5},
+        {id: 'festival', letter: 'l', label: 'Music festivals', color: 6},
+      ],
+      defaults: {combo: 'fhvxml', metric: 'ratio', bubbles: true, level: 'district'},
+      paramKeys: {combo: 'by_combo', metric: 'by_metric', bubbles: 'by_bubbles', level: 'by_level'},
+      levels: ['district', 'region'],
+      shapeLevel: (r) => r.level,
+      shapeId: (r) => r.id,
+      eventUnit: (e, level, regionOf) => (level === 'region' ? regionOf[e.ags] : e.ags),
+      eventPlace: (e) => e.city,
+      labels: (u, level) => (level === 'region' ? u.name : null),
+      nudge: {},
+      eventCells: (e) => [[e.event, 'sm-left'], [e.city, 'sm-left'], [e.category, 'sm-left sm-hide-narrow'], [fmt(e.visits), ''], [e.basis, 'sm-left sm-hide-narrow']],
+      unitWord: {district: 'districts', region: 'Regierungsbezirke'},
+    },
+  };
+
+  const state = {page: 'germany', hover: {germany: null, bavaria: null}, sort: {germany: ['per100k_visits', true], bavaria: ['per100k_visits', true]}};
+
+  const P = (cfg) => {
+    const p = dash.params(), k = cfg.paramKeys, d = cfg.defaults;
+    return {
+      combo: p[k.combo] || d.combo,
+      metric: p[k.metric] || d.metric,
+      bubbles: p[k.bubbles] === undefined || p[k.bubbles] === null ? d.bubbles : p[k.bubbles] !== false,
+      level: k.level ? (p[k.level] || d.level) : d.level,
+    };
+  };
+  const catColor = (c) => dash.colors[c.color % dash.colors.length];
+
+  // ---------- tabs ----------
+  function showPage(name, link) {
+    state.page = name;
+    document.querySelectorAll('.sm-tab').forEach((t) => t.setAttribute('aria-selected', String(t.dataset.page === name)));
+    document.querySelectorAll('.sm-page').forEach((s) => { s.hidden = s.dataset.page !== name; });
+    if (link) dash.setLink(name);
+    draw();
+  }
+  document.querySelectorAll('.sm-tab').forEach((t) => t.addEventListener('click', () => showPage(t.dataset.page, true)));
+
+  // ---------- controls ----------
+  Object.entries(PAGES).forEach(([name, cfg]) => {
+    const k = cfg.paramKeys;
+    document.querySelectorAll(`#${cfg.p}-metrics .sm-metric`).forEach((b) => b.addEventListener('click', () => dash.setParams({[k.metric]: b.dataset.metric})));
+    if (k.level) document.querySelectorAll(`#${cfg.p}-levels .sm-level`).forEach((b) => b.addEventListener('click', () => dash.setParams({[k.level]: b.dataset.level})));
+    const chipBox = document.getElementById(`${cfg.p}-chips`);
+    cfg.cats.forEach((c) => {
+      const b = document.createElement('button');
+      b.className = 'sm-btn sm-chip';
+      b.dataset.letter = c.letter;
+      const sw = document.createElement('span');
+      sw.className = 'sm-sw';
+      sw.style.background = catColor(c);
+      b.append(sw, document.createTextNode(c.label));
+      b.addEventListener('click', () => {
+        const cur = P(cfg).combo;
+        let next = cur.includes(c.letter) ? cur.replace(c.letter, '') : cur + c.letter;
+        if (!next) return;
+        next = cfg.cats.map((x) => x.letter).filter((l) => next.includes(l)).join('');
+        dash.setParams({[k.combo]: next});
+      });
+      chipBox.appendChild(b);
+    });
+    document.getElementById(`${cfg.p}-bubbles`).addEventListener('click', () => dash.setParams({[k.bubbles]: !P(cfg).bubbles}));
+    document.querySelectorAll(`#${cfg.p}-rank th`).forEach((th) => th.addEventListener('click', () => {
+      const key = th.dataset.k, s = state.sort[name];
+      if (s[0] === key) s[1] = !s[1]; else { s[0] = key; s[1] = ['name', 'per100k_visits', 'index', 'per100k_residents', 'segment'].includes(key); }
+      draw();
+    }));
+    document.getElementById(`${cfg.p}-search`).addEventListener('input', () => draw());
+  });
+
+  // ---------- geometry helpers ----------
+  const geomOf = (r) => (typeof r.geometry === 'string' ? JSON.parse(r.geometry) : r.geometry);
+  const ringsOf = (g) => (g.type === 'MultiPolygon' ? g.coordinates.flat() : g.coordinates);
+  const outerRings = (g) => (g.type === 'MultiPolygon' ? g.coordinates.map((p) => p[0]) : [g.coordinates[0]]);
+  function centroid(g) {
+    let best = null, bestA = 0;
+    outerRings(g).forEach((ring) => {
+      let a = 0, cx = 0, cy = 0;
+      for (let i = 0; i < ring.length - 1; i++) {
+        const [x0, y0] = ring[i], [x1, y1] = ring[i + 1];
+        const f = x0 * y1 - x1 * y0;
+        a += f; cx += (x0 + x1) * f; cy += (y0 + y1) * f;
+      }
+      if (Math.abs(a) > bestA) { bestA = Math.abs(a); best = [cx / (3 * a), cy / (3 * a)]; }
+    });
+    return best;
+  }
+  const setMark = (el, source, field, where) => { el.dataset.source = source; el.dataset.field = field; el.dataset.where = where; };
+  function failLine(el) {
+    el.replaceChildren();
+    const d = document.createElement('div');
+    d.className = 'sm-fail';
+    d.append(document.createElement('i'), document.createTextNode('Failed to load'));
+    el.appendChild(d);
+  }
+
+  // ---------- one page ----------
+  function drawPage(name) {
+    const cfg = PAGES[name], pre = cfg.p;
+    const p = P(cfg);
+    const mt = dash.data(cfg.metrics), tt = dash.data(cfg.total), ev = dash.data(cfg.events), sh = dash.data(cfg.shapes);
+    const ready = [mt, tt, ev, sh].every((d) => d.status === 'ok');
+    const failed = [mt, tt, ev, sh].some((d) => d.status === 'error');
+    const $ = (id) => document.getElementById(`${pre}-${id}`);
+
+    document.querySelectorAll(`#${pre}-metrics .sm-metric`).forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.metric === p.metric)));
+    document.querySelectorAll(`#${pre}-levels .sm-level`).forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.level === p.level)));
+    document.querySelectorAll(`#${pre}-chips .sm-chip`).forEach((b) => b.setAttribute('aria-pressed', String(p.combo.includes(b.dataset.letter))));
+    $('bubbles').setAttribute('aria-pressed', String(p.bubbles));
+
+    const where = `combo=${p.combo}&level=${p.level}`;
+    const n = tt.status === 'ok' ? tt.data.find((r) => r.combo === p.combo && r.level === p.level) : null;
+    ['workers', 'visits', 'ratio', 'both'].forEach((key) => {
+      const el = $(`kpi-${key}`);
+      el.dataset.where = where;
+      if (!n) { el.textContent = '—'; el.classList.toggle('dash-skeleton', !failed); return; }
+      el.classList.remove('dash-skeleton');
+      const f = el.dataset.field;
+      el.textContent = f === 'per100k_visits' ? fmt1(n[f]) : f === 'thin_both' ? String(n[f]) : compact(n[f]);
+    });
+    if (cfg.levels) $('kpi-both-label').textContent = `${cfg.unitWord[p.level][0].toUpperCase()}${cfg.unitWord[p.level].slice(1)} below the Bavarian average on both lenses (per event visit and per resident)`;
+
+    const mapEl = $('map');
+    if (!ready) {
+      if (failed) { mapEl.classList.remove('dash-skeleton'); failLine(mapEl); }
+      return;
+    }
+
+    const rows = mt.data.filter((r) => r.combo === p.combo && r.level === p.level);
+    const byId = Object.fromEntries(rows.map((r) => [r.id, r]));
+    const regionOf = Object.fromEntries(mt.data.filter((r) => r.combo === p.combo && r.level === 'district').map((r) => [r.id, r.region]));
+    const names = Object.fromEntries(rows.map((r) => [r.id, r.name]));
+    const on = cfg.cats.filter((c) => p.combo.includes(c.letter));
+    const evRows = ev.data.map((e) => ({...e, lat: Number(e.lat), lon: Number(e.lon), visits: Number(e.visits)}))
+      .filter((e) => on.some((c) => c.id === e.category));
+    const hover = state.hover[name];
+
+    // takeaway
+    const take = $('takeaway');
+    const ranked = rows.filter((r) => r.per100k_visits !== null).sort((a, b) => a.per100k_visits - b.per100k_visits);
+    const both = rows.filter((r) => r.segment === 'Thin on both').sort((a, b) => a.per100k_visits - b.per100k_visits);
+    take.replaceChildren();
+    const t = (s) => take.appendChild(document.createTextNode(s));
+    const m = (text, src, field, w) => { const s = document.createElement('b'); s.textContent = text; setMark(s, src, field, w); take.appendChild(s); };
+    t(`Fewest security workers per 100,000 event visits${cfg.levels ? ` (${cfg.unitWord[p.level]})` : ''}: `);
+    ranked.slice(0, 3).forEach((r, i) => { t(i ? (i === Math.min(2, ranked.length - 1) ? ' and ' : ', ') : ''); t(r.name + ' ('); m(fmt1(r.per100k_visits), cfg.metrics, 'per100k_visits', `combo=${p.combo}&level=${p.level}&id=${enc(r.id)}`); t(')'); });
+    t(`, against `);
+    m(fmt1(n.per100k_visits), cfg.total, 'per100k_visits', where);
+    t(` for ${cfg.areaWord}. `);
+    if (both.length) {
+      t('Below average on both lenses, i.e. also thin per resident: ');
+      t(both.slice(0, 8).map((r) => r.name).join(', ') + (both.length > 8 ? ` and ${both.length - 8} more` : ''));
+      t(' — the clearest case for extra event-security capacity.');
+    } else t('No area is below average on both lenses for this event mix.');
+
+    // map
+    mapEl.classList.remove('dash-skeleton');
+    const shapes = sh.data.filter((r) => cfg.shapeLevel(r) === p.level).map((r) => ({id: cfg.shapeId(r), g: geomOf(r)}));
+    const W = Math.max(280, mapEl.clientWidth || 600);
+    let x0 = Infinity, x1 = -Infinity, y0 = Infinity, y1 = -Infinity;
+    const lat0 = d3.mean(shapes.flatMap((s) => outerRings(s.g).flat().map((c) => c[1]))) || 51;
+    const lon0 = d3.mean(shapes.flatMap((s) => outerRings(s.g).flat().map((c) => c[0]))) || 10;
+    const KX = Math.cos(lat0 * Math.PI / 180);
+    shapes.forEach((s) => ringsOf(s.g).forEach((ring) => ring.forEach(([lon, lat]) => {
+      const x = (lon - lon0) * KX, y = -(lat - lat0);
+      x0 = Math.min(x0, x); x1 = Math.max(x1, x); y0 = Math.min(y0, y); y1 = Math.max(y1, y);
+    })));
+    const pad = 8;
+    const H = Math.min(Math.round((W - 2 * pad) * (y1 - y0) / (x1 - x0)) + 2 * pad, 780);
+    const k = Math.min((W - 2 * pad) / (x1 - x0), (H - 2 * pad) / (y1 - y0));
+    const ox = (W - k * (x1 - x0)) / 2, oy = (H - k * (y1 - y0)) / 2;
+    const proj = (lon, lat) => [ox + ((lon - lon0) * KX - x0) * k, oy + (-(lat - lat0) - y0) * k];
+    const pathOf = (g) => ringsOf(g).map((ring) => 'M' + ring.map(([lon, lat]) => proj(lon, lat).map((v) => v.toFixed(1)).join(',')).join('L') + 'Z').join('');
+
+    const crit = tok('--cds-chart-status-critical'), mid = tok('--cds-chart-muted'), good = resolve(dash.colors[0]), panel = tok('--color-panel'), none = tok('--color-border-line');
+    const diverge = (idx) => {
+      if (idx === null || idx === undefined) return none;
+      const v = Math.max(-1, Math.min(2, Math.log2(idx / 100)));
+      return v < 0 ? d3.interpolateRgb(mid, crit)(-v) : d3.interpolateRgb(mid, good)(v / 2);
+    };
+    const maxVisits = d3.max(rows, (r) => r.visits) || 1;
+    const seq = (v) => (v ? d3.interpolateRgb(panel, good)(0.15 + 0.85 * Math.sqrt(v / maxVisits)) : none);
+    const fillOf = (r) => !r ? none : p.metric === 'ratio' ? diverge(r.index) : p.metric === 'resid' ? diverge(r.resid_index) : p.metric === 'segment' ? segColor(r.segment) : seq(r.visits);
+
+    const unitsName = cfg.levels ? cfg.unitWord[p.level] : 'states';
+    const titles = {
+      ratio: ['Security workers per 100,000 event visits', `Red = fewer workers per counted event visit than the ${cfg.areaWord} average; blue = more; grey = no counted events. Bubbles show where the visits happen.`],
+      resid: ['Security workers per 100,000 residents', `Demand-free view of the security labour pool. Red = thinner than the ${cfg.areaWord} average.`],
+      segment: ['Priority segments', `Combines both lenses: red ${unitsName} are below average per event visit and per resident.`],
+      demand: ['Counted event visits per year', 'Darker = more counted visits; grey = none. Use with the bubbles to see which events drive the total.'],
+    };
+    $('map-title').textContent = titles[p.metric][0];
+    $('map-note').textContent = titles[p.metric][1];
+
+    const tip = document.createElement('div');
+    tip.className = 'sm-tip';
+    tip.hidden = true;
+    const showTip = (event, lines) => {
+      tip.replaceChildren();
+      lines.forEach(([cls, a, b]) => {
+        const d = document.createElement('div');
+        d.className = cls;
+        if (b === undefined) d.textContent = a;
+        else { const xa = document.createElement('span'); xa.textContent = a; const xb = document.createElement('span'); xb.textContent = b; d.append(xa, xb); }
+        tip.appendChild(d);
+      });
+      tip.hidden = false;
+      const box = mapEl.getBoundingClientRect();
+      const tw = tip.offsetWidth, th = tip.offsetHeight;
+      let x = event.clientX - box.left + 14, y = event.clientY - box.top + 14;
+      if (x + tw > box.width) x = event.clientX - box.left - tw - 14;
+      if (y + th > box.height) y = Math.max(0, event.clientY - box.top - th - 14);
+      tip.style.left = Math.max(0, x) + 'px';
+      tip.style.top = y + 'px';
+    };
+    const hideTip = () => { tip.hidden = true; };
+
+    const svg = d3.create('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('role', 'img').attr('aria-label', `Map of ${cfg.areaWord}`);
+    svg.append('g').selectAll('path').data(shapes).join('path')
+      .attr('class', (s) => 'sm-unit' + (shapes.length > 30 ? ' sm-thin' : '') + (s.id === hover ? ' sm-hi' : ''))
+      .attr('data-id', (s) => s.id)
+      .attr('d', (s) => pathOf(s.g))
+      .attr('fill', (s) => fillOf(byId[s.id]))
+      .on('mousemove', (event, s) => {
+        const r = byId[s.id];
+        if (!r) return;
+        const lines = [['sm-t1', r.name + (p.level === 'district' ? ` · ${r.region}` : '')], ['sm-kv', 'Security workers', fmt(r.workers)], ['sm-kv', 'Event visits counted', fmt(r.visits)],
+          ['sm-kv', 'Per 100k visits', r.per100k_visits === null ? '—' : `${fmt1(r.per100k_visits)} (index ${r.index})`],
+          ['sm-kv', 'Per 100k residents', `${fmt1(r.per100k_residents)} (index ${r.resid_index})`], ['sm-t2', r.segment]];
+        on.forEach((c) => { if (r[c.id]) lines.push(['sm-kv', c.label, fmt(r[c.id])]); });
+        showTip(event, lines);
+      })
+      .on('mouseenter', (event, s) => { state.hover[name] = s.id; highlight(name); })
+      .on('mouseleave', () => { state.hover[name] = null; highlight(name); hideTip(); });
+
+    const labels = svg.append('g');
+    shapes.forEach((s) => {
+      const text = cfg.labels(byId[s.id] || {id: s.id, name: s.id}, p.level);
+      if (!text) return;
+      const c = centroid(s.g);
+      const nd = cfg.nudge[s.id] || [0, 0];
+      const [x, y] = proj(c[0] + nd[0], c[1] + nd[1]);
+      labels.append('text').attr('class', 'sm-code').attr('x', x).attr('y', y).attr('text-anchor', 'middle').attr('dominant-baseline', 'middle').text(text);
+    });
+
+    const rMax = Math.max(14, W / 26);
+    const rs = d3.scaleSqrt([0, d3.max(ev.data, (e) => Number(e.visits))], [0, rMax]);
+    if (p.bubbles) {
+      svg.append('g').selectAll('circle').data(evRows.slice().sort((a, b) => b.visits - a.visits)).join('circle')
+        .attr('class', 'sm-bub')
+        .attr('cx', (e) => proj(e.lon, e.lat)[0]).attr('cy', (e) => proj(e.lon, e.lat)[1])
+        .attr('r', (e) => Math.max(2, rs(e.visits)))
+        .style('fill', (e) => catColor(cfg.cats.find((c) => c.id === e.category)))
+        .on('mousemove', (event, e) => {
+          const c = cfg.cats.find((x) => x.id === e.category);
+          showTip(event, [['sm-t1', `${c.label} · ${cfg.eventPlace(e, names)}`], ['sm-t2', e.event], ['sm-kv', 'Visits per year', fmt(e.visits)], ['sm-t1', e.basis]]);
+        })
+        .on('mouseleave', hideTip);
+    }
+    mapEl.replaceChildren(svg.node(), tip);
+
+    // legend
+    const lg = $('legend');
+    lg.replaceChildren();
+    if (p.metric === 'ratio' || p.metric === 'resid') {
+      const lw = 220, ls = d3.create('svg').attr('width', lw + 20).attr('height', 34);
+      const gid = `${pre}-grad`;
+      const grad = ls.append('defs').append('linearGradient').attr('id', gid);
+      d3.range(0, 1.0001, 0.1).forEach((tt2) => grad.append('stop').attr('offset', tt2).style('stop-color', diverge(100 * Math.pow(2, -1 + 3 * tt2))));
+      ls.append('rect').attr('x', 10).attr('y', 2).attr('width', lw).attr('height', 10).attr('rx', 3).attr('fill', `url(#${gid})`);
+      [[50, '50'], [100, `100 = ${cfg.areaWord === 'Germany' ? 'DE' : 'BY'}`], [200, '200'], [400, '400+']].forEach(([v, s]) => {
+        const x = 10 + lw * (Math.log2(v / 100) + 1) / 3;
+        ls.append('line').attr('x1', x).attr('x2', x).attr('y1', 12).attr('y2', 16).attr('stroke', tok('--cds-chart-axis'));
+        ls.append('text').attr('x', x).attr('y', 28).attr('text-anchor', 'middle').text(s);
+      });
+      const cap = document.createElement('span');
+      cap.textContent = p.metric === 'ratio' ? 'Index, workers per event visit' : 'Index, workers per resident';
+      lg.append(ls.node(), cap);
+    } else if (p.metric === 'segment') {
+      SEGMENTS.forEach((s) => {
+        const it = document.createElement('span'); it.className = 'sm-seg';
+        const sw = document.createElement('span'); sw.className = 'sm-sw'; sw.style.background = s.color(); sw.style.borderRadius = '2px';
+        it.append(sw, document.createTextNode(s.name)); lg.appendChild(it);
+      });
+    } else {
+      const it = document.createElement('span'); it.textContent = 'Lighter = fewer counted visits, darker = more'; lg.appendChild(it);
+    }
+    if (p.bubbles) {
+      const R5 = rs(5e6);
+      const bs = d3.create('svg').attr('width', 2 * R5 + 80).attr('height', 2 * R5 + 4);
+      [[5e6, '5M'], [1e6, '1M']].forEach(([v, s], i) => {
+        const r = rs(v), cx = R5 + 2, cy = 2 * R5 + 2 - r;
+        bs.append('circle').attr('cx', cx).attr('cy', cy).attr('r', r).attr('fill', 'none').attr('stroke', tok('--cds-chart-axis'));
+        bs.append('text').attr('x', 2 * R5 + 8).attr('y', i ? cy + r - 2 : cy - r + 10).text(s + ' visits');
+      });
+      lg.appendChild(bs.node());
+    }
+
+    // ranking table
+    const [sortKey, sortAsc] = state.sort[name];
+    const tb = document.querySelector(`#${pre}-rank tbody`);
+    const sorted = rows.slice().sort((a, b) => {
+      const va = a[sortKey], vb = b[sortKey];
+      if (va === null && vb === null) return a.name.localeCompare(b.name);
+      if (va === null) return 1; if (vb === null) return -1;
+      const c = typeof va === 'string' ? va.localeCompare(vb) : va - vb;
+      return sortAsc ? c : -c;
+    });
+    document.querySelectorAll(`#${pre}-rank th`).forEach((th) => th.setAttribute('aria-sort', th.dataset.k === sortKey ? (sortAsc ? 'ascending' : 'descending') : 'none'));
+    tb.replaceChildren(...sorted.map((r) => {
+      const tr = document.createElement('tr');
+      tr.dataset.key = `${enc(r.combo)},${enc(r.level)},${enc(r.id)}`;
+      tr.dataset.id = r.id;
+      if (r.id === hover) tr.classList.add('sm-hi');
+      const td = (text, cls) => { const c = document.createElement('td'); if (cls) c.className = cls; c.textContent = text; return c; };
+      const idx = document.createElement('td');
+      if (r.index !== null) {
+        const w = document.createElement('span'); w.className = 'sm-idx';
+        const bar = document.createElement('span'); bar.className = 'sm-bar';
+        bar.style.width = (0.4 + 2.6 * Math.min(1, Math.max(0, (Math.log2(r.index / 100) + 1) / 3))) + 'rem';
+        bar.style.background = diverge(r.index);
+        w.append(bar, document.createTextNode(String(r.index)));
+        idx.appendChild(w);
+      } else idx.textContent = '—';
+      const seg = document.createElement('td'); seg.className = 'sm-left sm-hide-narrow';
+      const sw = document.createElement('span'); sw.className = 'sm-sw'; sw.style.background = segColor(r.segment); sw.style.borderRadius = '2px';
+      const sp = document.createElement('span'); sp.className = 'sm-seg'; sp.append(sw, document.createTextNode(r.segment)); seg.appendChild(sp);
+      tr.append(td(r.name, 'sm-left'), td(fmt(r.workers)), td(fmt(r.visits)), td(r.per100k_visits === null ? '—' : fmt1(r.per100k_visits)), idx, td(fmt1(r.per100k_residents), 'sm-hide-narrow'), seg);
+      tr.addEventListener('mouseenter', () => { state.hover[name] = r.id; highlight(name); });
+      tr.addEventListener('mouseleave', () => { state.hover[name] = null; highlight(name); });
+      return tr;
+    }));
+
+    // events table
+    const q = $('search').value.trim().toLowerCase();
+    const etb = document.querySelector(`#${pre}-events tbody`);
+    const evList = evRows.slice().sort((a, b) => b.visits - a.visits).filter((e) => !q || [e.event, e.city, e.code || '', names[e.code] || ''].join(' ').toLowerCase().includes(q));
+    etb.replaceChildren(...evList.map((e) => {
+      const tr = document.createElement('tr');
+      tr.dataset.key = `${enc(e.event)},${enc(e.city)}`;
+      cfg.eventCells(e).forEach(([text, cls]) => { const c = document.createElement('td'); if (cls) c.className = cls; c.textContent = text; tr.appendChild(c); });
+      return tr;
+    }));
+  }
+
+  function highlight(name) {
+    const pre = PAGES[name].p, id = state.hover[name];
+    document.querySelectorAll(`#${pre}-map .sm-unit`).forEach((el) => el.classList.toggle('sm-hi', el.dataset.id === id));
+    document.querySelectorAll(`#${pre}-rank tbody tr`).forEach((el) => el.classList.toggle('sm-hi', el.dataset.id === id));
+    const hi = id ? [...document.querySelectorAll(`#${pre}-map .sm-unit`)].find((el) => el.dataset.id === id) : null;
+    if (hi && hi.parentNode.lastChild !== hi) hi.parentNode.appendChild(hi);
+  }
+
+  function draw() {
+    document.querySelectorAll('.sm-tab').forEach((t) => t.setAttribute('aria-selected', String(t.dataset.page === state.page)));
+    drawPage(state.page);
+  }
+
+  const start = window.__SM_PAGE__ || location.hash.slice(1);
+  if (PAGES[start]) state.page = start;
+  if (window.__SM_PAGE__) document.querySelector('.sm-tabs').hidden = true;
+  document.querySelectorAll('.sm-page').forEach((s) => { s.hidden = s.dataset.page !== state.page; });
+  dash.onData(draw);
+})();
+</script>
